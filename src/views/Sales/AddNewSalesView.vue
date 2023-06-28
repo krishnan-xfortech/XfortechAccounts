@@ -109,7 +109,7 @@
                           <th style="width: 20%" scope="col">Price</th>
                           <th style="width: 10%" scope="col">Qty</th>
                           <th style="width: 15%" scope="col">Total</th>
-                          <th style="width: 5%" scope="col"></th>
+                          <th style="width: 10%" scope="col"></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -151,9 +151,13 @@
                                   src="app-assets/img/btn-icons/x.svg"
                                 />
                               </a>
+                              <a type="button" class="badge bg-primary text-white ms-3">
+                                <span class="">Add Row</span>
+                            </a>
                             </div>
                           </td>
                         </tr>
+                        
                       </tbody>
                     </table>
                   </div>
