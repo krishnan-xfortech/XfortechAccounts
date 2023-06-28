@@ -1,5 +1,6 @@
 <template>
   <div class="main-layout">
+    import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
     <div class="main-layout-content">
       <div class="row">
         <div class="col-lg-12">
@@ -73,30 +74,13 @@
                   </div>
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
-                      <a
-                        class="btn btn-primary btn-sqr"
-                        data-bs-toggle="modal"
-                        data-bs-target="#addservice"
-                      >
-                        <img
-                          class="btn-icon2"
-                          src="app-assets/img/btn-icons/services.svg"
-                        />
-                      </a>
                       <button
+                        @click="$refs.customer_add_ref.showModal()"
                         class="btn btn-primary btn-sqr ms-75"
                         data-bs-toggle="modal"
                         data-bs-target="#addcustomer"
                       >
                         <img class="btn-icon2" src="app-assets/img/btn-icons/users.svg" />
-                      </button>
-                      <button class="btn btn-primary btn-sqr ms-75">
-                        <img
-                          class="btn-icon2"
-                          src="app-assets/img/btn-icons/shortcut.svg"
-                          data-bs-toggle="modal"
-                          data-bs-target="#shortcuts"
-                        />
                       </button>
                     </div>
                   </div>
@@ -279,7 +263,6 @@
                           <th style="width: 5%" scope="col">#</th>
                           <th style="width: 55%" scope="col">Service Name</th>
                           <th style="width: 25%" scope="col">Total</th>
-                          <th style="width: 5%" scope="col"></th>
                           <th style="width: 10%" scope="col"></th>
                         </tr>
                       </thead>
@@ -312,23 +295,11 @@
                               <span>125000.00</span>
                             </div>
                           </td>
+
                           <td>
                             <div class="d-flex align-items-center">
                               <a
-                                type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#measurements"
-                              >
-                                <img
-                                  class="btn-icon2"
-                                  src="app-assets/img/btn-icons/measurements.svg"
-                                />
-                              </a>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <a
+                                @click="$refs.edit_ref.showModal()"
                                 type="button"
                                 data-bs-toggle="modal"
                                 data-bs-target="#selectservice"
@@ -487,6 +458,7 @@
                       <div class="row align-items-center">
                         <div class="col-6">
                           <a
+                            @click="$refs.payment_ref.showModal()"
                             type="button"
                             class="btn btn-secondary w-100"
                             data-bs-toggle="modal"
@@ -514,4 +486,24 @@
       </div>
     </div>
   </div>
+  <Teleport to="#modals">
+    <PaymentModal ref="payment_ref" />
+    <AddCustomerModal ref="customer_add_ref" />
+    <EditModal ref="edit_ref" />
+  </Teleport>
 </template>
+<script>
+import PaymentModal from "../../components/modals/Sales/PaymentModal.vue";
+import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
+import EditModal from "../../components/modals/Sales/EditModal.vue";
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    PaymentModal,
+    AddCustomerModal,
+    EditModal,
+  },
+};
+</script>

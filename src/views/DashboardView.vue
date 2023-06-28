@@ -46,26 +46,30 @@
 
         <div class="row" style="margin-top: 10%">
           <div class="col-2">
-            <a href="sales-add.php" type="button" class="card home-card">
+            <router-link to="/add-sales" type="button" class="card home-card">
               <div class="card-body">
                 <img
                   class="mb-5"
                   src="app-assets/img/home-icons/printer.png"
-                  width="30px"
+                  style="width: 30px"
                 />
                 <h6 class="text-uppercase">Sales/POS</h6>
                 <p class="m-0">Create new sales</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
-            <a href="sales-list.php" type="button" class="card home-card">
+            <router-link to="/sales-list" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/list.png" width="30px" />
+                <img
+                  class="mb-5"
+                  src="app-assets/img/home-icons/list.png"
+                  style="width: 30px"
+                />
                 <h6 class="text-uppercase">Sales List</h6>
                 <p class="m-0">View sales/orders</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
             <a href="customers.php" type="button" class="card home-card">
@@ -99,7 +103,7 @@
                 <img
                   class="mb-5"
                   src="app-assets/img/home-icons/materials.png"
-                  width="30px"
+                  style="width: 30px"
                 />
                 <h6 class="text-uppercase">Expense</h6>
                 <p class="m-0">Manage expense</p>
