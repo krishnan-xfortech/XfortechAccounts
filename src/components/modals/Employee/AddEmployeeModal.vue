@@ -119,7 +119,7 @@
                                 </div> -->
                                 <div class="row align-items-center mb-3">
                                     <div class="col-4">
-                                        <label>Opening Bal.</label>
+                                        <label>Salary</label>
                                     </div>
                                     <div class="col-8">
                                         <input type="number" class="form-control" placeholder="Enter Amount">

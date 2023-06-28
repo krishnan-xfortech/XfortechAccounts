@@ -69,18 +69,18 @@
             </router-link>
           </div>
           <div class="col-2">
-            <a href="cash-receipt.php" type="button" class="card home-card">
+            <router-link to="/salary-payout" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/dollar.png" width="30px" />
-                <h6 class="text-uppercase">Cash Receipt</h6>
-                <p class="m-0">Customer payments</p>
+                <img class="mb-5" src="app-assets/img/home-icons/dollar.png" style="width: 30px" />
+                <h6 class="text-uppercase">Salary Payout</h6>
+                <p class="m-0">Employee payments</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
             <router-link to="/expenses" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/materials.png" width="30px" />
+                <img class="mb-5" src="app-assets/img/home-icons/materials.png" style="width: 30px" />
                 <h6 class="text-uppercase">Expense</h6>
                 <p class="m-0">Manage expense</p>
               </div>
@@ -96,6 +96,15 @@
             </router-link>
           </div>
           <div class="col-2">
+            <router-link to="/financial-year" type="button" class="card home-card">
+              <div class="card-body">
+                <img class="mb-5" src="/app-assets/img/home-icons/materials.png" style="width: 30px" />
+                <h6 class="text-uppercase">Financial Year</h6>
+                <p class="m-0">Manage financial year</p>
+              </div>
+            </router-link>
+          </div>
+          <!-- <div class="col-2">
             <a href="purchase.php" type="button" class="card home-card">
               <div class="card-body">
                 <img class="mb-5" src="app-assets/img/home-icons/purchase.png" width="30px" />
@@ -103,8 +112,8 @@
                 <p class="m-0">Bills & suppliers</p>
               </div>
             </a>
-          </div>
-          <div class="col-2">
+          </div> -->
+          <!-- <div class="col-2">
             <a href="branches.php" type="button" class="card home-card">
               <div class="card-body">
                 <img class="mb-5" src="app-assets/img/home-icons/branch.png" width="30px" />
@@ -121,7 +130,7 @@
                 <p class="m-0">Configure system</p>
               </div>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

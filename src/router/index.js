@@ -20,11 +20,6 @@ const router = createRouter({
             component: () => import('../views/FinancialYearView.vue')
         },
         {
-            path: '/employee',
-            name: 'employee',
-            component: () => import('../views/EmployeeView.vue')
-        },
-        {
 
             path: '/expenses',
             name: 'expense-expense',
@@ -54,6 +49,11 @@ const router = createRouter({
             path: '/employee',
             name: 'employee',
             component: () => import('../views/EmployeeView.vue')
+        },
+        {
+            path: '/salary-payout',
+            name: 'salary-payout',
+            component: () => import('../views/SalaryPayoutView.vue')
         },
     ],
 })
