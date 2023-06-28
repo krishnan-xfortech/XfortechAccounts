@@ -70,7 +70,7 @@
                           type="radio"
                           name="discounttype"
                           id="amount"
-                          checked
+                          v-model="tax"
                         />
                         <label class="form-check-label" for="amount">Yes </label>
                       </div>
@@ -80,12 +80,13 @@
                           type="radio"
                           name="discounttype"
                           id="percentage"
+                          v-model="tax"
                         />
                         <label class="form-check-label" for="percentage">No </label>
                       </div>
                     </div>
                   </div>
-                  <div class="col-4 ms-1">
+                  <div class="col-4 ms-1" v-if="tax === true">
                     <input
                       type="number"
                       class="form-control"
@@ -112,6 +113,7 @@ export default {
   data() {
     return {
       modal: null,
+      tax: false,
     };
   },
   mounted() {

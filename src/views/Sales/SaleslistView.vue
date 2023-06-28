@@ -2,7 +2,7 @@
   <div class="main-layout">
     <div class="main-layout-content">
       <div class="row">
-        <div class="col-12">
+        <div class="col-lg-12">
           <div class="card">
             <div class="card-header">
               <div class="row align-items-center">
@@ -23,39 +23,50 @@
                         </div>
                       </div>
                     </div>
+                    <div class="col-auto">
+                      <button
+                        @click="$refs.sort_by_ref.showModal()"
+                        class="btn btn-secondary btn-sqr"
+                        data-bs-toggle="modal"
+                        data-bs-target="#sortby"
+                      >
+                        <img class="btn-icon" src="app-assets/img/btn-icons/adjust.svg" />
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div class="col-4">
-                  <h5 class="m-0 text-center text-uppercase">Expense</h5>
+                  <h5 class="m-0 text-center text-uppercase">Sales List</h5>
                 </div>
                 <div class="col-4">
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
-                      <a
+                      <router-link
+                        to="/edit-sales"
                         type="button"
                         class="btn btn-secondary btn-sqr ms-75"
-                        @click="$refs.expense_edit_ref.showModal()"
                       >
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
-                      </a>
+                      </router-link>
                       <button class="btn btn-secondary btn-sqr ms-75">
                         <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                       </button>
                     </div>
                     <div class="col-auto">
-                      <a
+                      <router-link
+                        to="/add-sales"
                         class="btn btn-primary"
-                        @click="$refs.expense_add_ref.showModal()"
+                        href="sales-add.php"
                       >
                         <img
                           class="btn-plus-icon me-2"
                           src="app-assets/img/btn-icons/plus.svg"
                         />
-                        <span>Add New Expense</span>
-                      </a>
+                        <span>Add New Sales</span>
+                      </router-link>
                     </div>
                     <div class="col-auto">
-                      <router-link :to="{ name: 'dashboard' }" type="button" class="">
+                      <router-link to="/" type="button" class="">
                         <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
                       </router-link>
                     </div>
@@ -69,27 +80,38 @@
                   <table class="table table-sm m-0">
                     <thead>
                       <tr>
+                        <th scope="col">Branch</th>
                         <th scope="col">Date</th>
-                        <th scope="col">Expense Category Name</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Tax Included ?</th>
-                        <th scope="col">Payment Mode</th>
+                        <th scope="col">Invoice #</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Total Amount</th>
+                        <th scope="col">Balance Due</th>
+                        <th scope="col">Created At</th>
+                        <th scope="col">Created By</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="">
+                        <td>
+                          <small class="text-uppercase">Branch Name</small>
+                        </td>
                         <td>16/08/2022</td>
-                        <td>Petrol</td>
-                        <td>$ 1200</td>
-                        <td><span class="badge badge-pink">No</span></td>
-                        <td>Cash</td>
-                      </tr>
-                      <tr class="">
-                        <td>20/08/2022</td>
-                        <td>Food</td>
-                        <td>$ 1000</td>
-                        <td><span class="badge badge-success">Yes</span></td>
-                        <td>Card</td>
+                        <td>10001</td>
+                        <td>Nithish Robin</td>
+                        <td>
+                          <span>$</span>
+                          <span class="">15200.00</span>
+                        </td>
+                        <td>
+                          <span>$</span>
+                          <span class="">1500.00</span>
+                        </td>
+                        <td>
+                          <small>16/08/2022, 11:30 PM</small>
+                        </td>
+                        <td>
+                          <small>User/Staff Name</small>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -102,22 +124,17 @@
     </div>
   </div>
   <Teleport to="#modals">
-    <ExpenseAddModal ref="expense_add_ref" />
-    <ExpenseEditModal ref="expense_edit_ref" />
+    <SortModal ref="sort_by_ref" />
   </Teleport>
 </template>
-
 <script>
-import ExpenseAddModal from "../../components/modals/Expense/ExpenseAddModal.vue";
-import ExpenseEditModal from "../../components/modals/Expense/ExpenseEditModal.vue";
-
+import SortModal from "../../components/modals/Sales/SortModal.vue";
 export default {
   data() {
     return {};
   },
   components: {
-    ExpenseAddModal,
-    ExpenseEditModal,
+    SortModal,
   },
 };
 </script>
