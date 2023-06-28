@@ -94,7 +94,7 @@
             </a>
           </div>
           <div class="col-2">
-            <a href="materials.php" type="button" class="card home-card">
+            <router-link to="/expenses" type="button" class="card home-card">
               <div class="card-body">
                 <img
                   class="mb-5"
@@ -104,7 +104,7 @@
                 <h6 class="text-uppercase">Expense</h6>
                 <p class="m-0">Manage expense</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
             <router-link to="/expense-category" type="button" class="card home-card">
