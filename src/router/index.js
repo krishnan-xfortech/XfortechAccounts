@@ -15,6 +15,17 @@ const router = createRouter({
             component: () => import('../views/Expense/CategoryView.vue')
         },
         {
+            path: '/financial-year',
+            name: 'financial-year',
+            component: () => import('../views/FinancialYearView.vue')
+        },
+        {
+            path: '/employee',
+            name: 'employee',
+            component: () => import('../views/EmployeeView.vue')
+        },
+        {
+
             path: '/expenses',
             name: 'expense-expense',
             component: () => import('../views/Expense/ExpenseView.vue')
@@ -33,6 +44,16 @@ const router = createRouter({
             path: '/edit-sales',
             name: 'sales-editsales',
             component: () => import('../views/Sales/EditSalesView.vue')
+        },
+        {
+            path: '/financial-year',
+            name: 'financial-year',
+            component: () => import('../views/FinancialYearView.vue')
+        },
+        {
+            path: '/employee',
+            name: 'employee',
+            component: () => import('../views/EmployeeView.vue')
         },
     ],
 })

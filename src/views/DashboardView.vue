@@ -59,17 +59,13 @@
             </a>
           </div>
           <div class="col-2">
-            <router-link to="/sales-list" type="button" class="card home-card">
+            <a href="sales-list.php" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/list.png"
-                  style="width: 30px"
-                />
+                <img class="mb-5" src="app-assets/img/home-icons/list.png" width="30px" />
                 <h6 class="text-uppercase">Sales List</h6>
                 <p class="m-0">View sales/orders</p>
               </div>
-            </router-link>
+            </a>
           </div>
           <div class="col-2">
             <a href="customers.php" type="button" class="card home-card">
@@ -98,17 +94,17 @@
             </a>
           </div>
           <div class="col-2">
-            <router-link to="/expenses" type="button" class="card home-card">
+            <a href="materials.php" type="button" class="card home-card">
               <div class="card-body">
                 <img
                   class="mb-5"
                   src="app-assets/img/home-icons/materials.png"
-                  style="width: 30px"
+                  width="30px"
                 />
                 <h6 class="text-uppercase">Expense</h6>
                 <p class="m-0">Manage expense</p>
               </div>
-            </router-link>
+            </a>
           </div>
           <div class="col-2">
             <router-link to="/expense-category" type="button" class="card home-card">
