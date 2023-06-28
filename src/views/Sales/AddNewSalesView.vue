@@ -109,7 +109,7 @@
                           <th style="width: 20%" scope="col">Price</th>
                           <th style="width: 10%" scope="col">Qty</th>
                           <th style="width: 15%" scope="col">Total</th>
-                          <th style="width: 10%" scope="col"></th>
+                          <th style="width: 5%" scope="col"></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -145,18 +145,6 @@
 
                           <td>
                             <div class="d-flex align-items-center">
-                              <a
-                                @click="$refs.edit_ref.showModal()"
-                                type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#selectservice"
-                              >
-                                <img
-                                  class="x-icon"
-                                  src="app-assets/img/btn-icons/edit2.svg"
-                                  style="opacity: 0.5"
-                                />
-                              </a>
                               <a type="button" class="ms-3">
                                 <img
                                   class="x-icon"
@@ -339,13 +327,11 @@
   <Teleport to="#modals">
     <PaymentModal ref="payment_ref" />
     <!-- <AddCustomerModal ref="customer_add_ref" /> -->
-    <EditModal ref="edit_ref" />
   </Teleport>
 </template>
 <script>
 import PaymentModal from "../../components/modals/Sales/PaymentModal.vue";
 // import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
-import EditModal from "../../components/modals/Sales/EditModal.vue";
 export default {
   data() {
     return {};
@@ -353,7 +339,6 @@ export default {
   components: {
     PaymentModal,
     // AddCustomerModal,
-    EditModal,
   },
 };
 </script>
