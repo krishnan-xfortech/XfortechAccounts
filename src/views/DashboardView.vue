@@ -22,11 +22,7 @@
               <div class="col-4"></div>
               <div class="col-4">
                 <div class="text-center">
-                  <img
-                    src="https://xfortech.com/images/logo.png"
-                    class="mb-3"
-                    style="width: 30%; height: 50%"
-                  />
+                  <img src="https://xfortech.com/images/logo.png" class="mb-3" style="width: 30%; height: 50%" />
                   <p class="m-0 text-uppercase">
                     <span>Version:</span>
                     <span>1.0.0</span>
@@ -48,11 +44,7 @@
           <div class="col-2">
             <a href="sales-add.php" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/printer.png"
-                  width="30px"
-                />
+                <img class="mb-5" src="app-assets/img/home-icons/printer.png" width="30px" />
                 <h6 class="text-uppercase">Sales/POS</h6>
                 <p class="m-0">Create new sales</p>
               </div>
@@ -68,26 +60,18 @@
             </a>
           </div>
           <div class="col-2">
-            <a href="customers.php" type="button" class="card home-card">
+            <router-link to="/employee" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/users.png"
-                  width="30px"
-                />
-                <h6 class="text-uppercase">Customers</h6>
-                <p class="m-0">Manage customers</p>
+                <img class="mb-5" src="app-assets/img/home-icons/users.png" style="width: 30px" />
+                <h6 class="text-uppercase">Employees</h6>
+                <p class="m-0">Manage employees</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
             <a href="cash-receipt.php" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/dollar.png"
-                  width="30px"
-                />
+                <img class="mb-5" src="app-assets/img/home-icons/dollar.png" width="30px" />
                 <h6 class="text-uppercase">Cash Receipt</h6>
                 <p class="m-0">Customer payments</p>
               </div>
@@ -96,11 +80,7 @@
           <div class="col-2">
             <router-link to="/expenses" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/materials.png"
-                  width="30px"
-                />
+                <img class="mb-5" src="app-assets/img/home-icons/materials.png" width="30px" />
                 <h6 class="text-uppercase">Expense</h6>
                 <p class="m-0">Manage expense</p>
               </div>
@@ -109,11 +89,7 @@
           <div class="col-2">
             <router-link to="/expense-category" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="/app-assets/img/home-icons/materials.png"
-                  style="width: 30px"
-                />
+                <img class="mb-5" src="/app-assets/img/home-icons/materials.png" style="width: 30px" />
                 <h6 class="text-uppercase">Expense Category</h6>
                 <p class="m-0">Manage expense catgeory</p>
               </div>
@@ -122,11 +98,7 @@
           <div class="col-2">
             <a href="purchase.php" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/purchase.png"
-                  width="30px"
-                />
+                <img class="mb-5" src="app-assets/img/home-icons/purchase.png" width="30px" />
                 <h6 class="text-uppercase">Purchase</h6>
                 <p class="m-0">Bills & suppliers</p>
               </div>
@@ -135,11 +107,7 @@
           <div class="col-2">
             <a href="branches.php" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/branch.png"
-                  width="30px"
-                />
+                <img class="mb-5" src="app-assets/img/home-icons/branch.png" width="30px" />
                 <h6 class="text-uppercase">Branches</h6>
                 <p class="m-0">Manage branches</p>
               </div>
@@ -148,11 +116,7 @@
           <div class="col-2">
             <a href="settings.php" type="button" class="card home-card">
               <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/settings.png"
-                  width="30px"
-                />
+                <img class="mb-5" src="app-assets/img/home-icons/settings.png" width="30px" />
                 <h6 class="text-uppercase">Settings</h6>
                 <p class="m-0">Configure system</p>
               </div>
