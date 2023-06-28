@@ -5,7 +5,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title m-0">Edit Payout Details</div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" @click="hideModal()" aria-label="Close"></button>
                 </div>
                 <form>
                     <div class="modal-body normal-modal">
@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="row align-items-center mb-3">
                                     <div class="col-4">
-                                        <label>Opening Bal.</label>
+                                        <label>Account Balance</label>
                                     </div>
                                     <div class="col-8">
                                         <h6 class="m-0">
@@ -31,7 +31,7 @@
                                         </h6>
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-5">
+                                <!-- <div class="row align-items-center mb-5">
                                     <div class="col-4">
                                         <label>Sales Bal.</label>
                                     </div>
@@ -41,7 +41,7 @@
                                             <span>3200.75</span>
                                         </h6>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row align-items-center mb-3">
                                     <div class="col-4">
                                         <label>Paid Amount</label>
