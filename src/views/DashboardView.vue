@@ -72,17 +72,17 @@
             </router-link>
           </div>
           <div class="col-2">
-            <a href="customers.php" type="button" class="card home-card">
+            <router-link to="/employee" type="button" class="card home-card">
               <div class="card-body">
                 <img
                   class="mb-5"
                   src="app-assets/img/home-icons/users.png"
-                  width="30px"
+                  style="width: 30px"
                 />
-                <h6 class="text-uppercase">Customers</h6>
-                <p class="m-0">Manage customers</p>
+                <h6 class="text-uppercase">Employees</h6>
+                <p class="m-0">Manage employees</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
             <a href="cash-receipt.php" type="button" class="card home-card">
@@ -103,7 +103,7 @@
                 <img
                   class="mb-5"
                   src="app-assets/img/home-icons/materials.png"
-                  style="width: 30px"
+                  width="30px"
                 />
                 <h6 class="text-uppercase">Expense</h6>
                 <p class="m-0">Manage expense</p>
