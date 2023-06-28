@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="plus" transform="translate(-4 -4)">
+    <path id="Line_3" data-name="Line 3" d="M0,15a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V14A1,1,0,0,1,0,15Z" transform="translate(12 5)" fill="#fff"/>
+    <path id="Line_4" data-name="Line 4" d="M14,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H14a1,1,0,0,1,1,1A1,1,0,0,1,14,1Z" transform="translate(5 12)" fill="#fff"/>
+  </g>
+</svg>
