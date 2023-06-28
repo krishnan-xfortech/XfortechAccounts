@@ -72,7 +72,7 @@
                     </div>
                   </div>
                   <div class="row align-items-center justify-content-end">
-                    <div class="col-auto">
+                    <!-- <div class="col-auto">
                       <button
                         @click="$refs.customer_add_ref.showModal()"
                         class="btn btn-primary btn-sqr ms-75"
@@ -81,6 +81,13 @@
                       >
                         <img class="btn-icon2" src="app-assets/img/btn-icons/users.svg" />
                       </button>
+                    </div> -->
+                    <div class="col-6">
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Enter GSTNO"
+                      />
                     </div>
                   </div>
                 </div>
@@ -89,14 +96,19 @@
             <div class="card-body p-0">
               <div class="row">
                 <div class="col-12">
-                  <div class="table-responsive sales-add-scroll sales-add-table">
-                    <table class="table sales-table table-bordered table-sm m-0">
+                  <div
+                    class="table-responsive sales-add-scroll sales-add-table"
+                  >
+                    <table
+                      class="table sales-table table-bordered table-sm m-0"
+                    >
                       <thead>
                         <tr>
                           <th style="width: 5%" scope="col">#</th>
-                          <th style="width: 55%" scope="col">Service Name</th>
-                          <th style="width: 15%" scope="col">Qty</th>
-                          <th style="width: 25%" scope="col">Total</th>
+                          <th style="width: 40%" scope="col">Product Name</th>
+                          <th style="width: 20%" scope="col">Price</th>
+                          <th style="width: 10%" scope="col">Qty</th>
+                          <th style="width: 15%" scope="col">Total</th>
                           <th style="width: 10%" scope="col"></th>
                         </tr>
                       </thead>
@@ -104,24 +116,18 @@
                         <tr class="">
                           <td>1</td>
                           <td>
-                            <div class="">
-                              <div class="main-heading">Shirt Full Sleeve Casual</div>
-                              <div class="subheading">
-                                <span>Material 1</span> -
-                                <span class="ps-1">3.5</span>
-                                <span>MTRS</span>
-                              </div>
-                              <div class="subheading">
-                                <span>Material 2</span> -
-                                <span class="ps-1">6.5</span>
-                                <span>MTRS</span>
-                              </div>
-                              <div class="subheading">
-                                <span>Material 3</span> -
-                                <span class="ps-1">10</span>
-                                <span>NOS</span>
-                              </div>
-                            </div>
+                            <input
+                              type="text"
+                              class="form-control border-none px-0"
+                              placeholder="Enter Product Name"
+                            />
+                          </td>
+                          <td>
+                            <input
+                              type="number"
+                              class="form-control border-none px-0"
+                              placeholder="Enter Price"
+                            />
                           </td>
                           <td>
                             <input
@@ -271,7 +277,8 @@
                               value=""
                               id="roundoff"
                             />
-                            <label class="form-check-label" for="roundoff"> </label>
+                            <label class="form-check-label" for="roundoff">
+                            </label>
                           </div>
                         </div>
                       </div>
@@ -309,7 +316,9 @@
                           </a>
                         </div>
                         <div class="col-6">
-                          <a type="button" class="btn btn-secondary w-100"> Save </a>
+                          <a type="button" class="btn btn-secondary w-100">
+                            Save
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -329,13 +338,13 @@
   </div>
   <Teleport to="#modals">
     <PaymentModal ref="payment_ref" />
-    <AddCustomerModal ref="customer_add_ref" />
+    <!-- <AddCustomerModal ref="customer_add_ref" /> -->
     <EditModal ref="edit_ref" />
   </Teleport>
 </template>
 <script>
 import PaymentModal from "../../components/modals/Sales/PaymentModal.vue";
-import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
+// import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
 import EditModal from "../../components/modals/Sales/EditModal.vue";
 export default {
   data() {
@@ -343,7 +352,7 @@ export default {
   },
   components: {
     PaymentModal,
-    AddCustomerModal,
+    // AddCustomerModal,
     EditModal,
   },
 };
