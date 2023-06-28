@@ -24,9 +24,9 @@
                                 <div class="col-4">
                                     <div class="row align-items-center justify-content-end">
                                         <div class="col-auto">
-                                            <a href="#" class="btn btn-secondary btn-sqr">
+                                            <!-- <a href="#" class="btn btn-secondary btn-sqr">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/eye.svg">
-                                            </a>
+                                            </a> -->
                                             <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.edit_employee_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg">
                                             </button>

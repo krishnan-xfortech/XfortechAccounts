@@ -42,22 +42,22 @@
 
         <div class="row" style="margin-top: 10%">
           <div class="col-2">
-            <a href="sales-add.php" type="button" class="card home-card">
+            <router-link to="/add-sales" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/printer.png" width="30px" />
+                <img class="mb-5" src="app-assets/img/home-icons/printer.png" style="width: 30px" />
                 <h6 class="text-uppercase">Sales/POS</h6>
                 <p class="m-0">Create new sales</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
-            <a href="sales-list.php" type="button" class="card home-card">
+            <router-link to="/sales-list" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/list.png" width="30px" />
+                <img class="mb-5" src="app-assets/img/home-icons/list.png" style="width: 30px" />
                 <h6 class="text-uppercase">Sales List</h6>
                 <p class="m-0">View sales/orders</p>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-2">
             <router-link to="/employee" type="button" class="card home-card">
@@ -107,7 +107,11 @@
           <!-- <div class="col-2">
             <a href="purchase.php" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/purchase.png" width="30px" />
+                <img
+                  class="mb-5"
+                  src="app-assets/img/home-icons/purchase.png"
+                  width="30px"
+                />
                 <h6 class="text-uppercase">Purchase</h6>
                 <p class="m-0">Bills & suppliers</p>
               </div>
@@ -116,7 +120,11 @@
           <!-- <div class="col-2">
             <a href="branches.php" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/branch.png" width="30px" />
+                <img
+                  class="mb-5"
+                  src="app-assets/img/home-icons/branch.png"
+                  width="30px"
+                />
                 <h6 class="text-uppercase">Branches</h6>
                 <p class="m-0">Manage branches</p>
               </div>
@@ -125,7 +133,11 @@
           <div class="col-2">
             <a href="settings.php" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="app-assets/img/home-icons/settings.png" width="30px" />
+                <img
+                  class="mb-5"
+                  src="app-assets/img/home-icons/settings.png"
+                  width="30px"
+                />
                 <h6 class="text-uppercase">Settings</h6>
                 <p class="m-0">Configure system</p>
               </div>

@@ -73,30 +73,13 @@
                   </div>
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
-                      <a
-                        class="btn btn-primary btn-sqr"
-                        data-bs-toggle="modal"
-                        data-bs-target="#addservice"
-                      >
-                        <img
-                          class="btn-icon2"
-                          src="app-assets/img/btn-icons/services.svg"
-                        />
-                      </a>
                       <button
+                        @click="$refs.customer_add_ref.showModal()"
                         class="btn btn-primary btn-sqr ms-75"
                         data-bs-toggle="modal"
                         data-bs-target="#addcustomer"
                       >
                         <img class="btn-icon2" src="app-assets/img/btn-icons/users.svg" />
-                      </button>
-                      <button class="btn btn-primary btn-sqr ms-75">
-                        <img
-                          class="btn-icon2"
-                          src="app-assets/img/btn-icons/shortcut.svg"
-                          data-bs-toggle="modal"
-                          data-bs-target="#shortcuts"
-                        />
                       </button>
                     </div>
                   </div>
@@ -105,181 +88,15 @@
             </div>
             <div class="card-body p-0">
               <div class="row">
-                <div class="col-7">
-                  <div class="row">
-                    <div class="col-3">
-                      <div class="sales-add-scroll sales-add-category">
-                        <ul class="mt-3">
-                          <li>
-                            <a href="" class="active" type="button">
-                              <span>All Services</span>
-                              <span class="ms-2">(30)</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" class="" type="button">
-                              <span>Shirts</span>
-                              <span class="ms-2">(10)</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" class="" type="button">
-                              <span>Trousers</span>
-                              <span class="ms-2">(04)</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" class="" type="button">
-                              <span>Churidhar</span>
-                              <span class="ms-2">(10)</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" class="" type="button">
-                              <span>Wedding Suit</span>
-                              <span class="ms-2">(03)</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" class="" type="button">
-                              <span>Curtain</span>
-                              <span class="ms-2">(0)</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="" class="" type="button">
-                              <span>Pardha</span>
-                              <span class="ms-2">(06)</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-9">
-                      <div class="sales-add-scroll">
-                        <div class="row mt-50">
-                          <div class="col-3">
-                            <a
-                              class="sales-add-service"
-                              type="button"
-                              data-bs-toggle="modal"
-                              data-bs-target="#selectservice"
-                            >
-                              <div class="gradient"></div>
-                              <img src="app-assets/img/sample-img.jpg" class="" />
-                              <div class="text">
-                                <h6 class="text-sm">Half Sleeve Shirt</h6>
-                                <h6 class="m-0">
-                                  <span>$</span>
-                                  <span>1250.00</span>
-                                </h6>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-3">
-                            <a
-                              class="sales-add-service"
-                              type="button"
-                              data-bs-toggle="modal"
-                              data-bs-target="#selectservice"
-                            >
-                              <div class="gradient"></div>
-                              <img src="app-assets/img/sample-service2.jpg" class="" />
-                              <div class="text">
-                                <h6 class="text-sm">Half Sleeve Shirt</h6>
-                                <h6 class="m-0">
-                                  <span>$</span>
-                                  <span>1250.00</span>
-                                </h6>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-3">
-                            <a
-                              class="sales-add-service"
-                              type="button"
-                              data-bs-toggle="modal"
-                              data-bs-target="#selectservice"
-                            >
-                              <div class="gradient"></div>
-                              <img src="app-assets/img/sample-img.jpg" class="" />
-                              <div class="text">
-                                <h6 class="text-sm">Half Sleeve Shirt</h6>
-                                <h6 class="m-0">
-                                  <span>$</span>
-                                  <span>1250.00</span>
-                                </h6>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-3">
-                            <a
-                              class="sales-add-service"
-                              type="button"
-                              data-bs-toggle="modal"
-                              data-bs-target="#selectservice"
-                            >
-                              <div class="gradient"></div>
-                              <img src="app-assets/img/sample-img.jpg" class="" />
-                              <div class="text">
-                                <h6 class="text-sm">Half Sleeve Shirt</h6>
-                                <h6 class="m-0">
-                                  <span>$</span>
-                                  <span>1250.00</span>
-                                </h6>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-3">
-                            <a
-                              class="sales-add-service"
-                              type="button"
-                              data-bs-toggle="modal"
-                              data-bs-target="#selectservice"
-                            >
-                              <div class="gradient"></div>
-                              <img src="app-assets/img/sample-img.jpg" class="" />
-                              <div class="text">
-                                <h6 class="text-sm">Half Sleeve Shirt</h6>
-                                <h6 class="m-0">
-                                  <span>$</span>
-                                  <span>1250.00</span>
-                                </h6>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-3">
-                            <a
-                              class="sales-add-service"
-                              type="button"
-                              data-bs-toggle="modal"
-                              data-bs-target="#selectservice"
-                            >
-                              <div class="gradient"></div>
-                              <img src="app-assets/img/sample-service.jpg" class="" />
-                              <div class="text">
-                                <h6 class="text-sm">Half Sleeve Shirt</h6>
-                                <h6 class="m-0">
-                                  <span>$</span>
-                                  <span>1250.00</span>
-                                </h6>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-5">
+                <div class="col-12">
                   <div class="table-responsive sales-add-scroll sales-add-table">
                     <table class="table sales-table table-bordered table-sm m-0">
                       <thead>
                         <tr>
                           <th style="width: 5%" scope="col">#</th>
                           <th style="width: 55%" scope="col">Service Name</th>
+                          <th style="width: 15%" scope="col">Qty</th>
                           <th style="width: 25%" scope="col">Total</th>
-                          <th style="width: 5%" scope="col"></th>
                           <th style="width: 10%" scope="col"></th>
                         </tr>
                       </thead>
@@ -307,28 +124,23 @@
                             </div>
                           </td>
                           <td>
+                            <input
+                              type="number"
+                              class="form-control border-none px-0"
+                              placeholder="Enter QTY"
+                            />
+                          </td>
+                          <td>
                             <div class="">
                               <span>$</span>
                               <span>125000.00</span>
                             </div>
                           </td>
+
                           <td>
                             <div class="d-flex align-items-center">
                               <a
-                                type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#measurements"
-                              >
-                                <img
-                                  class="btn-icon2"
-                                  src="app-assets/img/btn-icons/measurements.svg"
-                                />
-                              </a>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <a
+                                @click="$refs.edit_ref.showModal()"
                                 type="button"
                                 data-bs-toggle="modal"
                                 data-bs-target="#selectservice"
@@ -487,6 +299,7 @@
                       <div class="row align-items-center">
                         <div class="col-6">
                           <a
+                            @click="$refs.payment_ref.showModal()"
                             type="button"
                             class="btn btn-secondary w-100"
                             data-bs-toggle="modal"
@@ -514,4 +327,24 @@
       </div>
     </div>
   </div>
+  <Teleport to="#modals">
+    <PaymentModal ref="payment_ref" />
+    <AddCustomerModal ref="customer_add_ref" />
+    <EditModal ref="edit_ref" />
+  </Teleport>
 </template>
+<script>
+import PaymentModal from "../../components/modals/Sales/PaymentModal.vue";
+import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
+import EditModal from "../../components/modals/Sales/EditModal.vue";
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    PaymentModal,
+    AddCustomerModal,
+    EditModal,
+  },
+};
+</script>
