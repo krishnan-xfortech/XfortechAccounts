@@ -62,13 +62,13 @@
                 </a>
               </div>
               <div class="col-2">
-                <a href="customers.php" type="button" class="card home-card">
+                <router-link to="/employee" type="button" class="card home-card">
                   <div class="card-body">
-                    <img class="mb-5" src="app-assets/img/home-icons/users.png" width="30px">
-                    <h6 class="text-uppercase">Customers</h6>
-                    <p class="m-0">Manage customers</p>
+                    <img class="mb-5" src="app-assets/img/home-icons/users.png" style="width: 30px;">
+                    <h6 class="text-uppercase">Employee</h6>
+                    <p class="m-0">Manage employees</p>
                   </div>
-                </a>
+                </router-link>
               </div>
               <div class="col-2">
                 <a href="cash-receipt.php" type="button" class="card home-card">
@@ -98,6 +98,15 @@
                 </router-link>
               </div>
               <div class="col-2">
+                <router-link to="/financial-year" type="button" class="card home-card">
+                  <div class="card-body">
+                    <img class="mb-5" src="/app-assets/img/home-icons/dollar.png" style="width: 30px;">
+                    <h6 class="text-uppercase">Financial Year</h6>
+                    <p class="m-0">Manage financial year</p>
+                  </div>
+                </router-link>
+              </div>
+              <!-- <div class="col-2">
                 <a href="purchase.php" type="button" class="card home-card">
                   <div class="card-body">
                     <img class="mb-5" src="app-assets/img/home-icons/purchase.png" width="30px">
@@ -123,7 +132,7 @@
                     <p class="m-0">Configure system</p>
                   </div>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
