@@ -1,0 +1,70 @@
+<template>
+  <div class="modal fade" id="addBank" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title m-0">Add Bank details</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+          <div class="modal-body normal-modal">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Branch name</div>
+                  <div class="col-6">
+                    <select class="form-select">
+                      <option>Select a Category</option>
+                      <option>Branch 1</option>
+                      <option>Branch 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Bank name</div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Account balance</div>
+                  <div class="col-6">
+                    <input type="number" class="form-control" placeholder="Enter Amount" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-text">Save & New</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import { Modal } from "bootstrap";
+
+export default {
+  data() {
+    return {
+      modal: null,
+      tax: 0,
+    };
+  },
+  mounted() {
+    this.modal = new Modal(document.getElementById("addBank"));
+  },
+  methods: {
+    showModal() {
+      this.modal.show();
+    },
+    hideModal() {
+      this.modal.hide();
+    },
+  },
+};
+</script>

@@ -55,6 +55,11 @@ const router = createRouter({
             name: 'salary-payout',
             component: () => import('../views/SalaryPayoutView.vue')
         },
+        {
+            path: '/banking-view',
+            name: 'banking-view',
+            component: () => import('../views/BankingView.vue')
+        },
     ],
 })
 
