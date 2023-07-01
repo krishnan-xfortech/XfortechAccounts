@@ -60,6 +60,7 @@
                         <th scope="col">Account Balance</th>
                         <th scope="col">Total Deposit(₹)</th>
                         <th scope="col">Total Withdraw(₹)</th>
+                        <th scope="col">Description</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -69,6 +70,7 @@
                         <td>₹ 20000</td>
                         <td>₹ 120000</td>
                         <td>₹ 100000</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing.</td>
                       </tr>
                     </tbody>
                   </table>

@@ -125,13 +125,6 @@
                                             </div>
                                         </div>
                                         <div class="row mb-1 align-items-center">
-                                            <div class="col-6">Payment Recieved:</div>
-                                            <div class="col-6 fw-bolder">
-                                                <span class="text-uppercase">₹</span>
-                                                <span>1500.00</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-1 align-items-center">
                                             <div class="col-6">Balance:</div>
                                             <div class="col-6 fw-bolder">
                                                 <span class="text-uppercase">₹</span>

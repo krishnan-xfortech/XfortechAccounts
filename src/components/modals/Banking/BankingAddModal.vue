@@ -18,21 +18,25 @@
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
-                  <div class="col-3">Account balance</div>
+                  <div class="col-3">Branch</div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Enter Branch name" />
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Opening Balance</div>
                   <div class="col-6">
                     <input type="number" class="form-control" placeholder="Enter Amount" />
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
-                  <div class="col-3">Total Deposit</div>
+                  <div class="col-3">Description</div>
                   <div class="col-6">
-                    <input type="number" class="form-control" placeholder="Enter Amount" />
-                  </div>
-                </div>
-                <div class="row align-items-center mb-3">
-                  <div class="col-3">Total Withdrwaw</div>
-                  <div class="col-6">
-                    <input type="number" class="form-control" placeholder="Enter Amount" />
+                    <textarea
+                  rows="4"
+                  class="form-control"
+                  placeholder="Enter Description"
+                ></textarea>
                   </div>
                 </div>
               </div>
