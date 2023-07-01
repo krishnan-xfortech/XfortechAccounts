@@ -10,16 +10,9 @@
                   <div class="row">
                     <div class="col-8">
                       <div class="has-icon-left mb-0">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Seach Here"
-                        />
+                        <input type="text" class="form-control" placeholder="Seach Here" />
                         <div class="form-control-position">
-                          <img
-                            class="search-icon mb-4"
-                            src="app-assets/img/btn-icons/search.svg"
-                          />
+                          <img class="search-icon mb-4" src="app-assets/img/btn-icons/search.svg" />
                         </div>
                       </div>
                     </div>
@@ -31,11 +24,8 @@
                 <div class="col-4">
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
-                      <a
-                        type="button"
-                        class="btn btn-secondary btn-sqr ms-75"
-                        @click="$refs.expense_edit_ref.showModal()"
-                      >
+                      <a type="button" class="btn btn-secondary btn-sqr ms-75"
+                        @click="$refs.expense_edit_ref.showModal()">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </a>
                       <button class="btn btn-secondary btn-sqr ms-75">
@@ -43,14 +33,8 @@
                       </button>
                     </div>
                     <div class="col-auto">
-                      <a
-                        class="btn btn-primary"
-                        @click="$refs.expense_add_ref.showModal()"
-                      >
-                        <img
-                          class="btn-plus-icon me-2"
-                          src="app-assets/img/btn-icons/plus.svg"
-                        />
+                      <a class="btn btn-primary" @click="$refs.expense_add_ref.showModal()">
+                        <img class="btn-plus-icon me-2" src="app-assets/img/btn-icons/plus.svg" />
                         <span>Add New Expense</span>
                       </a>
                     </div>
@@ -74,6 +58,7 @@
                         <th scope="col">Amount</th>
                         <th scope="col">Tax Included ?</th>
                         <th scope="col">Payment Mode</th>
+                        <th scope="col">Bank Account</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -83,6 +68,7 @@
                         <td>$ 1200</td>
                         <td><span class="badge badge-pink">No</span></td>
                         <td>Cash</td>
+                        <td>ESAF Bank</td>
                       </tr>
                       <tr class="">
                         <td>20/08/2022</td>
@@ -90,6 +76,7 @@
                         <td>$ 1000</td>
                         <td><span class="badge badge-success">Yes</span></td>
                         <td>Card</td>
+                        <td>ESAF Bank</td>
                       </tr>
                     </tbody>
                   </table>

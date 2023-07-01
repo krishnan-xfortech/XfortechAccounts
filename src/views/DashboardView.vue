@@ -113,6 +113,15 @@
               </div>
             </router-link>
           </div>
+          <div class="col-2">
+            <router-link to="/customers" type="button" class="card home-card">
+              <div class="card-body">
+                <img class="mb-5" src="/app-assets/img/home-icons/users.png" style="width: 30px" />
+                <h6 class="text-uppercase">Customers</h6>
+                <p class="m-0">Manage Customer details</p>
+              </div>
+            </router-link>
+          </div>
           <!-- <div class="col-2">
             <a href="purchase.php" type="button" class="card home-card">
               <div class="card-body">

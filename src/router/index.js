@@ -58,7 +58,30 @@ const router = createRouter({
         {
             path: '/banking-view',
             name: 'banking-view',
-            component: () => import('../views/BankingView.vue')
+            component: () => import('../views/Banking/BankingView.vue')
+        },
+        {
+            path: '/banking-view-more',
+            name: 'banking-view-more',
+            redirect : {name : 'banking-view-deposit'},
+            component: () => import('../views/Banking/BankingViewMore.vue'),
+            children: [
+                {
+                    path: '/',
+                    name: 'banking-view-deposit',
+                    component: () => import('../views/Banking/Deposit.vue')
+                },
+                {
+                    path: '/banking-view-withdraw',
+                    name: 'banking-view-withdraw',
+                    component: () => import('../views/Banking/Withdraw.vue')
+                }
+            ]
+        },
+        {
+            path: '/customers',
+            name: 'customers',
+            component: () => import('../views/CustomersView.vue')
         },
     ],
 })

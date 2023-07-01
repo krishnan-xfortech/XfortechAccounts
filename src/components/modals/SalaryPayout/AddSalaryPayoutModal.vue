@@ -31,17 +31,6 @@
                                         </h6>
                                     </div>
                                 </div>
-                                <!-- <div class="row align-items-center mb-5">
-                                    <div class="col-4">
-                                        <label>Sales Bal.</label>
-                                    </div>
-                                    <div class="col-8">
-                                        <h6 class="m-0">
-                                            <span>$</span>
-                                            <span>3200.75</span>
-                                        </h6>
-                                    </div>
-                                </div> -->
                                 <div class="row align-items-center mb-3">
                                     <div class="col-4">
                                         <label>Paid Amount</label>

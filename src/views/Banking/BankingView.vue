@@ -24,7 +24,10 @@
                 <div class="col-4">
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
-                      <a type="button" class="btn btn-secondary btn-sqr ms-75" @click="$refs.add_bank_ref.showModal()">
+                      <router-link to="/banking-view-more" class="btn btn-secondary btn-sqr">
+                        <img class="btn-icon" src="app-assets/img/btn-icons/eye.svg">
+                      </router-link>
+                      <a type="button" class="btn btn-secondary btn-sqr ms-75" @click="$refs.edit_bank_ref.showModal()">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </a>
                       <button class="btn btn-secondary btn-sqr ms-75">
@@ -32,9 +35,9 @@
                       </button>
                     </div>
                     <div class="col-auto">
-                      <a class="btn btn-primary" @click="$refs.edit_bank_ref.showModal()">
+                      <a class="btn btn-primary" @click="$refs.add_bank_ref.showModal()">
                         <img class="btn-plus-icon me-2" src="app-assets/img/btn-icons/plus.svg" />
-                        <span>Add New Expense</span>
+                        <span>Add New Bank</span>
                       </a>
                     </div>
                     <div class="col-auto">
@@ -52,16 +55,20 @@
                   <table class="table table-sm m-0">
                     <thead>
                       <tr>
-                        <th scope="col">Branch Name</th>
+                        <th scope="col">#</th>
                         <th scope="col">Bank</th>
                         <th scope="col">Account Balance</th>
+                        <th scope="col">Total Deposit(₹)</th>
+                        <th scope="col">Total Withdraw(₹)</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="">
-                        <td>Branch 1</td>
+                        <td>1</td>
                         <td>ESAF Bank</td>
-                        <td>$ 1200</td>
+                        <td>₹ 20000</td>
+                        <td>₹ 120000</td>
+                        <td>₹ 100000</td>
                       </tr>
                     </tbody>
                   </table>
@@ -80,8 +87,8 @@
 </template>
 
 <script>
-import BankingAddModal from '../components/modals/Banking/BankingAddModal.vue';
-import BankingEditModal from '../components/modals/Banking/BankingEditModal.vue';
+import BankingAddModal from '../../components/modals/Banking/BankingAddModal.vue';
+import BankingEditModal from '../../components/modals/Banking/BankingEditModal.vue';
 
 export default {
   data() {

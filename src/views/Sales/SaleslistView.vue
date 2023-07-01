@@ -10,28 +10,11 @@
                   <div class="row">
                     <div class="col-8">
                       <div class="has-icon-left mb-0">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Seach Here"
-                        />
+                        <input type="text" class="form-control" placeholder="Seach Here" />
                         <div class="form-control-position">
-                          <img
-                            class="search-icon mb-4"
-                            src="app-assets/img/btn-icons/search.svg"
-                          />
+                          <img class="search-icon mb-4" src="app-assets/img/btn-icons/search.svg" />
                         </div>
                       </div>
-                    </div>
-                    <div class="col-auto">
-                      <button
-                        @click="$refs.sort_by_ref.showModal()"
-                        class="btn btn-secondary btn-sqr"
-                        data-bs-toggle="modal"
-                        data-bs-target="#sortby"
-                      >
-                        <img class="btn-icon" src="app-assets/img/btn-icons/adjust.svg" />
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -41,11 +24,7 @@
                 <div class="col-4">
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
-                      <router-link
-                        to="/edit-sales"
-                        type="button"
-                        class="btn btn-secondary btn-sqr ms-75"
-                      >
+                      <router-link to="/edit-sales" type="button" class="btn btn-secondary btn-sqr ms-75">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </router-link>
                       <button class="btn btn-secondary btn-sqr ms-75">
@@ -53,15 +32,8 @@
                       </button>
                     </div>
                     <div class="col-auto">
-                      <router-link
-                        to="/add-sales"
-                        class="btn btn-primary"
-                        href="sales-add.php"
-                      >
-                        <img
-                          class="btn-plus-icon me-2"
-                          src="app-assets/img/btn-icons/plus.svg"
-                        />
+                      <router-link to="/add-sales" class="btn btn-primary" href="sales-add.php">
+                        <img class="btn-plus-icon me-2" src="app-assets/img/btn-icons/plus.svg" />
                         <span>Add New Sales</span>
                       </router-link>
                     </div>
@@ -80,38 +52,24 @@
                   <table class="table table-sm m-0">
                     <thead>
                       <tr>
-                        <th scope="col">Branch</th>
                         <th scope="col">Date</th>
                         <th scope="col">Invoice #</th>
                         <th scope="col">Customer</th>
                         <th scope="col">Total Amount</th>
                         <th scope="col">Balance Due</th>
+                        <th scope="col">Due Date</th>
                         <th scope="col">Created At</th>
-                        <th scope="col">Created By</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="">
-                        <td>
-                          <small class="text-uppercase">Branch Name</small>
-                        </td>
                         <td>16/08/2022</td>
                         <td>10001</td>
                         <td>Nithish Robin</td>
-                        <td>
-                          <span>$</span>
-                          <span class="">15200.00</span>
-                        </td>
-                        <td>
-                          <span>$</span>
-                          <span class="">1500.00</span>
-                        </td>
-                        <td>
-                          <small>16/08/2022, 11:30 PM</small>
-                        </td>
-                        <td>
-                          <small>User/Staff Name</small>
-                        </td>
+                        <td><span>$</span><span class="">15200.00</span></td>
+                        <td><span>$</span><span class="">1500.00</span></td>
+                        <td>16/08/2022</td>
+                        <td><small>16/08/2022, 11:30 PM</small></td>
                       </tr>
                     </tbody>
                   </table>

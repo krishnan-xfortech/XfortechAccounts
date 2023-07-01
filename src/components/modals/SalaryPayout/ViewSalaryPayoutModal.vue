@@ -104,14 +104,6 @@
                                         <span class="text-white">16/08/2022, 11:30 PM</span>
                                     </div>
                                 </div>
-                                <div class="row align-items-center">
-                                    <div class="col-3">
-                                        Created By
-                                    </div>
-                                    <div class="col-9">
-                                        <span class="text-white">User/Staff Name</span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -137,11 +129,11 @@ export default {
     mounted() {
         this.modal = new Modal(document.getElementById('viewreceipt'));
     },
-    methods:{
-        showModal(){
+    methods: {
+        showModal() {
             this.modal.show()
         },
-        hideModal(){
+        hideModal() {
             this.modal.hide()
         }
     }

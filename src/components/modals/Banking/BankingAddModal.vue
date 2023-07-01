@@ -12,23 +12,25 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="row align-items-center mb-3">
-                  <div class="col-3">Branch name</div>
-                  <div class="col-6">
-                    <select class="form-select">
-                      <option>Select a Category</option>
-                      <option>Branch 1</option>
-                      <option>Branch 2</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row align-items-center mb-3">
                   <div class="col-3">Bank name</div>
                   <div class="col-6">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" placeholder="Enter Bank Name" />
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
                   <div class="col-3">Account balance</div>
+                  <div class="col-6">
+                    <input type="number" class="form-control" placeholder="Enter Amount" />
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Total Deposit</div>
+                  <div class="col-6">
+                    <input type="number" class="form-control" placeholder="Enter Amount" />
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Total Withdrwaw</div>
                   <div class="col-6">
                     <input type="number" class="form-control" placeholder="Enter Amount" />
                   </div>
@@ -52,7 +54,6 @@ export default {
   data() {
     return {
       modal: null,
-      tax: 0,
     };
   },
   mounted() {

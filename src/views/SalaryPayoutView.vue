@@ -16,12 +16,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-auto">
+                                        <!-- <div class="col-auto">
                                             <button class="btn btn-secondary btn-sqr" data-bs-toggle="modal"
                                                 data-bs-target="#sortby">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/adjust.svg">
                                             </button>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-4">
@@ -30,10 +30,12 @@
                                 <div class="col-4">
                                     <div class="row align-items-center justify-content-end">
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary btn-sqr" @click="$refs.view_salary_payout_ref.showModal()">
+                                            <a class="btn btn-secondary btn-sqr"
+                                                @click="$refs.view_salary_payout_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/eye.svg">
                                             </a>
-                                            <a type="button" class="btn btn-secondary btn-sqr ms-75" @click="$refs.edit_salary_payout_ref.showModal()">
+                                            <a type="button" class="btn btn-secondary btn-sqr ms-75"
+                                                @click="$refs.edit_salary_payout_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg">
                                             </a>
                                             <button class="btn btn-secondary btn-sqr ms-75">
@@ -47,7 +49,7 @@
                                             </a>
                                         </div>
                                         <div class="col-auto">
-                                            <router-link :to="{name:'dashboard'}" type="button" class="">
+                                            <router-link :to="{ name: 'dashboard' }" type="button" class="">
                                                 <img src="app-assets/img/btn-icons/close.svg" class="back-btn">
                                             </router-link>
                                         </div>
@@ -68,19 +70,17 @@
                                                 <th scope="col">Towards</th>
                                                 <th scope="col">Payment Method</th>
                                                 <th scope="col">Created At</th>
-                                                <th scope="col">Created By</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="" v-for="i in 5">
                                                 <td>16/08/2022</td>
                                                 <td>10001</td>
-                                                <td>Nithish Robin</td> 
+                                                <td>Nithish Robin</td>
                                                 <td><span>$</span><span>15200.00</span></td>
                                                 <td><span class="badge badge-pink">Salary</span></td>
                                                 <td><span class="text-uppercase">Cash</span></td>
                                                 <td><small>16/08/2022, 11:30 PM</small></td>
-                                                <td><small>User/Staff Name</small></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -96,7 +96,6 @@
     <Teleport to="#modals">
         <AddSalaryPayoutModal ref="add_salary_payout_ref" />
         <EditSalaryPayoutModal ref="edit_salary_payout_ref" />
-        <SortbyModal ref="sortby_ref" />
         <ViewSalaryPayoutModal ref="view_salary_payout_ref" />
     </Teleport>
 </template>
@@ -104,7 +103,6 @@
 <script>
 import EditSalaryPayoutModal from '../components/modals/SalaryPayout/EditSalaryPayoutModal.vue';
 import AddSalaryPayoutModal from '../components/modals/SalaryPayout/AddSalaryPayoutModal.vue';
-import SortbyModal from '../components/modals/SalaryPayout/SortbyModal.vue';
 import ViewSalaryPayoutModal from '../components/modals/SalaryPayout/ViewSalaryPayoutModal.vue';
 
 export default {
@@ -116,7 +114,6 @@ export default {
     components: {
         AddSalaryPayoutModal,
         EditSalaryPayoutModal,
-        SortbyModal,
         ViewSalaryPayoutModal
     }
 }
