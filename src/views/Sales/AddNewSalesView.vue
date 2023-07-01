@@ -100,7 +100,7 @@
                             <input type="number" class="form-control border-none px-0" placeholder="Enter Quantity" />
                           </td>
                           <td>
-                            <select class="form-select">
+                            <select class="form-select" style="border: 0;">
                               <option>Numbers (NOS)</option>
                               <option>Carton (Box)</option>
                               <option>Kilogram (Kg)</option>
