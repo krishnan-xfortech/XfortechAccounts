@@ -30,6 +30,11 @@
                                             <span>Add New Deposit</span>
                                         </a>
                                     </div>
+                                    <div class="col-auto">
+                                        <router-link :to="{ name: 'banking-view' }" type="button" class="">
+                                          <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
+                                        </router-link>
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-4" v-if="$route.name == 'banking-view-withdraw'">
@@ -49,6 +54,11 @@
                                             <span>Add New Withdraw</span>
                                         </a>
                                     </div>
+                                    <div class="col-auto">
+                                        <router-link :to="{ name: 'banking-view' }" type="button" class="">
+                                          <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
+                                        </router-link>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -101,10 +111,17 @@
                                             </div>
                                         </div>
                                         <div class="row mb-1 align-items-center">
-                                            <div class="col-6">Total Sales:</div>
+                                            <div class="col-6">Total Deposit:</div>
                                             <div class="col-6 fw-bolder">
                                                 <span class="text-uppercase">₹</span>
                                                 <span>150000.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col-6">Total Withdraw:</div>
+                                            <div class="col-6 fw-bolder">
+                                                <span class="text-uppercase">₹</span>
+                                                <span>23000.00</span>
                                             </div>
                                         </div>
                                         <div class="row mb-1 align-items-center">
@@ -112,6 +129,13 @@
                                             <div class="col-6 fw-bolder">
                                                 <span class="text-uppercase">₹</span>
                                                 <span>1500.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col-6">Balance:</div>
+                                            <div class="col-6 fw-bolder">
+                                                <span class="text-uppercase">₹</span>
+                                                <span>2500.00</span>
                                             </div>
                                         </div>
                                     </div>

@@ -33,6 +33,7 @@
                         <th>Receipt #</th>
                         <th>Withdrawn Amount</th>
                         <th>Payment Mode</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -49,6 +50,27 @@
                         </td>
                         <td>
                             <div class="text-uppercase">BAnk Transfer</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            16/08/2022
+                        </td>
+                        <td>
+                            10001
+                        </td>
+                        <td>
+                            <span>1200.00</span>
+                            <span>AED</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center ">
+                            <div class="text-uppercase">Cheque</div>
+                            <div class="text-uppercase ms-auto"><span class="badge badge-success">
+                                Approved
+                            </span>
+                        </div>
+                        </div>
                         </td>
                     </tr>
                 </tbody>
