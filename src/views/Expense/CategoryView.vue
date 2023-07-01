@@ -38,7 +38,7 @@
                       >
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </a>
-                      <button class="btn btn-secondary btn-sqr ms-75">
+                      <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                         <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                       </button>
                     </div>
@@ -115,13 +115,14 @@
   <Teleport to="#modals">
     <CategoryAddModal ref="category_add_ref" />
     <CategoryEditModal ref="category_edit_ref" />
+    <DeleteConfirmModal ref="delete_ref" />
   </Teleport>
 </template>
 
 <script>
 import CategoryAddModal from "../../components/modals/Expense/CategoryAddModal.vue";
 import CategoryEditModal from "../../components/modals/Expense/CategoryEditModal.vue";
-
+import DeleteConfirmModal from '../../components/modals/Delete/DeleteConfirmModal.vue';
 export default {
   data() {
     return {};
@@ -129,6 +130,7 @@ export default {
   components: {
     CategoryAddModal,
     CategoryEditModal,
-  },
+    DeleteConfirmModal
+},
 };
 </script>

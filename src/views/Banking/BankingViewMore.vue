@@ -20,7 +20,7 @@
                                             @click="$refs.deposit_edit_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                                         </a>
-                                        <button class="btn btn-secondary btn-sqr ms-75">
+                                        <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                                         </button>
                                     </div>
@@ -44,7 +44,7 @@
                                             @click="$refs.withdraw_edit_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                                         </a>
-                                        <button class="btn btn-secondary btn-sqr ms-75">
+                                        <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                                         </button>
                                     </div>
@@ -165,6 +165,7 @@
         <WithdrawEditModal ref="withdraw_edit_ref" />
         <DepositAddModal ref="deposit_add_ref" />
         <DepositEditModal ref="deposit_edit_ref" />
+        <DeleteConfirmModal ref="delete_ref" />
     </Teleport>
 </template>
 
@@ -173,10 +174,14 @@ import WithdrawAddModal from '../../components/modals/Banking/Withdraw/WithdrawA
 import WithdrawEditModal from '../../components/modals/Banking/Withdraw/WithdrawEditModal.vue';
 import DepositAddModal from '../../components/modals/Banking/Deposit/DepositAddModal.vue';
 import DepositEditModal from '../../components/modals/Banking/Deposit/DepositEditModal.vue';
-
+import DeleteConfirmModal from '../../components/modals/Delete/DeleteConfirmModal.vue';
 export default {
     components: {
-        WithdrawAddModal, WithdrawEditModal, DepositAddModal, DepositEditModal
-    }
+    WithdrawAddModal,
+    WithdrawEditModal,
+    DepositAddModal,
+    DepositEditModal,
+    DeleteConfirmModal
+}
 }
 </script>

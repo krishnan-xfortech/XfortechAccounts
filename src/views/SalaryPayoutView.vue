@@ -38,7 +38,7 @@
                                                 @click="$refs.edit_salary_payout_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg">
                                             </a>
-                                            <button class="btn btn-secondary btn-sqr ms-75">
+                                            <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg">
                                             </button>
                                         </div>
@@ -99,6 +99,7 @@
         <AddSalaryPayoutModal ref="add_salary_payout_ref" />
         <EditSalaryPayoutModal ref="edit_salary_payout_ref" />
         <ViewSalaryPayoutModal ref="view_salary_payout_ref" />
+        <DeleteConfirmModal ref="delete_ref" />
     </Teleport>
 </template>
 
@@ -106,6 +107,7 @@
 import EditSalaryPayoutModal from '../components/modals/SalaryPayout/EditSalaryPayoutModal.vue';
 import AddSalaryPayoutModal from '../components/modals/SalaryPayout/AddSalaryPayoutModal.vue';
 import ViewSalaryPayoutModal from '../components/modals/SalaryPayout/ViewSalaryPayoutModal.vue';
+import DeleteConfirmModal from '../components/modals/Delete/DeleteConfirmModal.vue';
 
 export default {
     data() {
@@ -116,7 +118,9 @@ export default {
     components: {
         AddSalaryPayoutModal,
         EditSalaryPayoutModal,
-        ViewSalaryPayoutModal
+        ViewSalaryPayoutModal,
+        DeleteConfirmModal
+
     }
 }
 </script>

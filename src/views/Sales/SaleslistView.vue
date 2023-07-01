@@ -27,7 +27,7 @@
                       <router-link to="/edit-sales" type="button" class="btn btn-secondary btn-sqr ms-75">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </router-link>
-                      <button class="btn btn-secondary btn-sqr ms-75">
+                      <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                         <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                       </button>
                     </div>
@@ -83,16 +83,19 @@
   </div>
   <Teleport to="#modals">
     <SortModal ref="sort_by_ref" />
+    <DeleteConfirmModal ref="delete_ref" />
   </Teleport>
 </template>
 <script>
 import SortModal from "../../components/modals/Sales/SortModal.vue";
+import DeleteConfirmModal from '../../components/modals/Delete/DeleteConfirmModal.vue';
 export default {
   data() {
     return {};
   },
   components: {
     SortModal,
+    DeleteConfirmModal
   },
 };
 </script>

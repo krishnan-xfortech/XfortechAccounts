@@ -30,7 +30,7 @@
                                             <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.edit_customer_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg">
                                             </button>
-                                            <button class="btn btn-secondary btn-sqr ms-75">
+                                            <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg">
                                             </button>
                                         </div>
@@ -153,6 +153,7 @@
         <AddCustomersModal ref="add_customer_ref" />
         <EditCustomersModal ref="edit_customer_ref" />
         <ViewCustomerModal ref="view_customer_ref" />
+        <DeleteConfirmModal ref="delete_ref" />
     </Teleport>
 </template>
 
@@ -160,17 +161,16 @@
 import EditCustomersModal from '../components/modals/Customers/EditCustomersModal.vue';
 import AddCustomersModal from '../components/modals/Customers/AddCustomersModal.vue';
 import ViewCustomerModal from '../components/modals/Customers/ViewCustomerModal.vue';
-
+import DeleteConfirmModal from '../components/modals/Delete/DeleteConfirmModal.vue';
 export default {
     data() {
-        return {
-
-        }
+        return {}
     },
     components: {
     AddCustomersModal,
     EditCustomersModal,
-    ViewCustomerModal
+    ViewCustomerModal,
+    DeleteConfirmModal
 }
 }
 </script>

@@ -27,7 +27,7 @@
                                             <a type="button" class="btn btn-secondary btn-sqr ms-75" @click="$refs.edit_financial_year_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg">
                                             </a>
-                                            <button class="btn btn-secondary btn-sqr ms-75">
+                                            <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg">
                                             </button>
                                         </div>
@@ -116,12 +116,14 @@
     <Teleport to="#modals">
         <AddFinancialYearModal ref="add_financial_year_ref" />
         <EditFinancialYearModal ref="edit_financial_year_ref" />
+        <DeleteConfirmModal ref="delete_ref" />
     </Teleport>
 </template>
 
 <script>
 import AddFinancialYearModal from '../components/modals/FinancialYear/AddFinancialYearModal.vue';
 import EditFinancialYearModal from '../components/modals/FinancialYear/EditFinancialYearModal.vue';
+import DeleteConfirmModal from '../components/modals/Delete/DeleteConfirmModal.vue';
 
 export default {
     data() {
@@ -131,7 +133,9 @@ export default {
     },
     components: {
         AddFinancialYearModal,
-        EditFinancialYearModal
+        EditFinancialYearModal,
+        DeleteConfirmModal
+
     }
 }
 </script>

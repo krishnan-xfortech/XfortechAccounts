@@ -30,7 +30,7 @@
                                             <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.edit_employee_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg">
                                             </button>
-                                            <button class="btn btn-secondary btn-sqr ms-75">
+                                            <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg">
                                             </button>
                                         </div>
@@ -99,6 +99,7 @@
         <AddEmployeeModal ref="add_employee_ref" />
         <EditEmployeeModal ref="edit_employee_ref" />
         <ViewEmployeeModal ref="view_employee_ref" />
+        <DeleteConfirmModal ref="delete_ref" />
     </Teleport>
 </template>
 
@@ -106,6 +107,7 @@
 import AddEmployeeModal from '../components/modals/Employee/AddEmployeeModal.vue';
 import EditEmployeeModal from '../components/modals/Employee/EditEmployeeModal.vue';
 import ViewEmployeeModal from '../components/modals/Employee/ViewEmployeeModal.vue';
+import DeleteConfirmModal from '../components/modals/Delete/DeleteConfirmModal.vue';
 export default {
     data() {
         return {
@@ -115,7 +117,8 @@ export default {
     components: {
     AddEmployeeModal,
     EditEmployeeModal,
-    ViewEmployeeModal
+    ViewEmployeeModal,
+    DeleteConfirmModal
 }
 }
 

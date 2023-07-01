@@ -28,7 +28,7 @@
                         @click="$refs.expense_edit_ref.showModal()">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </a>
-                      <button class="btn btn-secondary btn-sqr ms-75">
+                      <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
                         <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                       </button>
                     </div>
@@ -91,13 +91,14 @@
   <Teleport to="#modals">
     <ExpenseAddModal ref="expense_add_ref" />
     <ExpenseEditModal ref="expense_edit_ref" />
+    <DeleteConfirmModal ref="delete_ref" />
   </Teleport>
 </template>
 
 <script>
 import ExpenseAddModal from "../../components/modals/Expense/ExpenseAddModal.vue";
 import ExpenseEditModal from "../../components/modals/Expense/ExpenseEditModal.vue";
-
+import DeleteConfirmModal from '../../components/modals/Delete/DeleteConfirmModal.vue';
 export default {
   data() {
     return {};
@@ -105,6 +106,7 @@ export default {
   components: {
     ExpenseAddModal,
     ExpenseEditModal,
+    DeleteConfirmModal
   },
 };
 </script>
