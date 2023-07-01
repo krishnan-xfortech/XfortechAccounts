@@ -52,7 +52,6 @@
                       <option value="3">Cheque</option>
                       <option value="4">UPI</option>
                       <option value="5">Bank Transfer</option>
-                      <option value="6">Bank Note</option>
                     </select>
                   </div>
                 </div>

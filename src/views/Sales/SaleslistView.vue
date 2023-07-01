@@ -24,6 +24,9 @@
                 <div class="col-4">
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
+                      <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.payment_ref.showModal()">
+                        <img class="btn-icon" src="app-assets/img/btn-icons/money.svg" />
+                      </button>
                       <router-link to="/edit-sales" type="button" class="btn btn-secondary btn-sqr ms-75">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </router-link>
@@ -59,7 +62,6 @@
                         <th scope="col">Balance Due</th>
                         <th scope="col">Due Date</th>
                         <th scope="col">Created At</th>
-                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -71,11 +73,6 @@
                         <td><span>$</span><span class="">1500.00</span></td>
                         <td>16/08/2022</td>
                         <td><small>16/08/2022, 11:30 PM</small></td>
-                        <td>
-                          <a type="button" class="btn btn-secondary text-white ms-3" @click="$refs.payment_ref.showModal()">
-                          <span class="text-uppercase">pay</span>
-                        </a>
-                      </td>
                       </tr>
                     </tbody>
                   </table>
