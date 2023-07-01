@@ -61,8 +61,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                       <input type="number" class="form-control" placeholder="Enter GSTNO" />
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn-primary btn-sqr ms-75" @click="$refs.add_customer_ref.showModal()">
+                        <img class="btn-icon2" src="app-assets/img/btn-icons/users.svg">
+                    </button>
                     </div>
                   </div>
                 </div>
@@ -270,19 +275,19 @@
   </div>
   <Teleport to="#modals">
     <PaymentModal ref="payment_ref" />
-    <!-- <AddCustomerModal ref="customer_add_ref" /> -->
+    <AddCustomerModal ref="add_customer_ref" />
   </Teleport>
 </template>
 <script>
 import PaymentModal from "../../components/modals/Sales/PaymentModal.vue";
-// import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
+import AddCustomerModal from "../../components/modals/Sales/AddCustomerModal.vue";
 export default {
   data() {
     return {};
   },
   components: {
     PaymentModal,
-    // AddCustomerModal,
+    AddCustomerModal,
   },
 };
 </script>
