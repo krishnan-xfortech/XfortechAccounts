@@ -69,6 +69,7 @@
                                                 <th scope="col">Paid Amount</th>
                                                 <th scope="col">Towards</th>
                                                 <th scope="col">Payment Method</th>
+                                                <th scope="col">Payment Status</th>
                                                 <th scope="col">Created At</th>
                                             </tr>
                                         </thead>
@@ -80,6 +81,7 @@
                                                 <td><span>$</span><span>15200.00</span></td>
                                                 <td><span class="badge badge-pink">Salary</span></td>
                                                 <td><span class="text-uppercase">Cash</span></td>
+                                                <td><span class="badge badge-success">Fully Paid</span></td>
                                                 <td><small>16/08/2022, 11:30 PM</small></td>
                                             </tr>
                                         </tbody>

@@ -39,6 +39,14 @@
                                         <input type="number" class="form-control" placeholder="Enter Amount">
                                     </div>
                                 </div>
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4">
+                                        <label>Balance</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="number" class="form-control" placeholder="Enter Balance">
+                                    </div>
+                                </div>
                                 <div class="row align-items-center justify-content-end mb-3">
                                     <div class="col-4">
                                         <label>Towards</label>
@@ -65,15 +73,23 @@
                                         <label>Method</label>
                                     </div>
                                     <div class="col-8">
-                                        <select class="form-select">
+                                        <select class="form-select" v-model="payment_method">
                                             <option disabled>Select Payment Method</option>
-                                            <option>Cash</option>
-                                            <option>Card</option>
-                                            <option>Cheque</option>
-                                            <option>UPI</option>
-                                            <option>Bank Transfer</option>
-                                            <option>Bank Note</option>
+                                            <option value="1">Cash</option>
+                                            <option value="2">Card</option>
+                                            <option value="3">Cheque</option>
+                                            <option value="4">UPI</option>
+                                            <option value="5">Bank Transfer</option>
+                                            <option value="6">Bank Note</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-5" v-if="payment_method==3">
+                                    <div class="col-4">
+                                        <label>Cheque Due Date</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="date" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row align-items-center mb-5">
@@ -121,12 +137,20 @@
                                         <input type="text" disabled class="form-control border-none" value="10001">
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-0">
+                                <div class="row align-items-center mb-3">
                                     <div class="col-4">
                                         <label>Date</label>
                                     </div>
                                     <div class="col-8">
                                         <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-end mb-3">
+                                    <div class="col-4">
+                                        <label>Status</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="badge badge-danger">Not Paid</span>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +172,8 @@ import { Modal } from 'bootstrap';
 export default {
     data() {
         return {
-            modal: null
+            modal: null,
+            payment_method:1
         }
     },
     mounted() {

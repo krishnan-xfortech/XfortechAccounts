@@ -70,6 +70,26 @@
                                 </div>
                                 <div class="row align-items-center mb-4">
                                     <div class="col-3">
+                                       Cheque Due Date
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="text-white">
+                                            16/08/2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
+                                        Payment Status
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="badge badge-secondary">
+                                            Partually paid
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
                                         Reference
                                     </div>
                                     <div class="col-9">
