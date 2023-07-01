@@ -59,6 +59,7 @@
                         <th scope="col">Balance Due</th>
                         <th scope="col">Due Date</th>
                         <th scope="col">Created At</th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -70,6 +71,11 @@
                         <td><span>$</span><span class="">1500.00</span></td>
                         <td>16/08/2022</td>
                         <td><small>16/08/2022, 11:30 PM</small></td>
+                        <td>
+                          <a type="button" class="btn btn-secondary text-white ms-3" @click="$refs.payment_ref.showModal()">
+                          <span class="text-uppercase">pay</span>
+                        </a>
+                      </td>
                       </tr>
                     </tbody>
                   </table>
@@ -84,18 +90,21 @@
   <Teleport to="#modals">
     <SortModal ref="sort_by_ref" />
     <DeleteConfirmModal ref="delete_ref" />
+    <PaymentModal ref="payment_ref" />
   </Teleport>
 </template>
 <script>
 import SortModal from "../../components/modals/Sales/SortModal.vue";
 import DeleteConfirmModal from '../../components/modals/Delete/DeleteConfirmModal.vue';
+import PaymentModal from "../../components/modals/Sales/PaymentModal.vue";
 export default {
   data() {
     return {};
   },
   components: {
     SortModal,
-    DeleteConfirmModal
+    DeleteConfirmModal,
+    PaymentModal,
   },
 };
 </script>
