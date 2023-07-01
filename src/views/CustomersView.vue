@@ -24,9 +24,9 @@
                                 <div class="col-4">
                                     <div class="row align-items-center justify-content-end">
                                         <div class="col-auto">
-                                            <!-- <a href="" class="btn btn-secondary btn-sqr">
+                                            <button href="" class="btn btn-secondary btn-sqr" @click="$refs.view_customer_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/eye.svg">
-                                            </a> -->
+                                            </button>
                                             <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.edit_customer_ref.showModal()">
                                                 <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg">
                                             </button>
@@ -60,6 +60,7 @@
                                                 <th scope="col">Customer Name</th>
                                                 <th scope="col">Phone</th>
                                                 <th scope="col">Email</th>
+                                                <th scope="col">Balance Due</th>
                                                 <th scope="col">Address</th>
                                                 <th scope="col">Created At</th>
                                             </tr>
@@ -78,6 +79,9 @@
                                                 </td>
                                                 <td>
                                                     customer123456@gmail.com
+                                                </td>
+                                                <td>
+                                                    <span>₹ </span> <span>5000</span>
                                                 </td>
                                                 <td>
                                                     Mannaniya Complex, Chinnakkada
@@ -101,6 +105,9 @@
                                                     customer123456@gmail.com
                                                 </td>
                                                 <td>
+                                                    <span>₹ </span> <span>5000</span>
+                                                </td>
+                                                <td>
                                                     Mannaniya Complex, Chinnakkada
                                                 </td>
                                                 <td>
@@ -120,6 +127,9 @@
                                                 </td>
                                                 <td>
                                                     customer123456@gmail.com
+                                                </td>
+                                                <td>
+                                                    <span>₹ </span> <span>5000</span>
                                                 </td>
                                                 <td>
                                                     Mannaniya Complex, Chinnakkada
@@ -142,12 +152,14 @@
     <Teleport to="#modals">
         <AddCustomersModal ref="add_customer_ref" />
         <EditCustomersModal ref="edit_customer_ref" />
+        <ViewCustomerModal ref="view_customer_ref" />
     </Teleport>
 </template>
 
 <script>
 import EditCustomersModal from '../components/modals/Customers/EditCustomersModal.vue';
 import AddCustomersModal from '../components/modals/Customers/AddCustomersModal.vue';
+import ViewCustomerModal from '../components/modals/Customers/ViewCustomerModal.vue';
 
 export default {
     data() {
@@ -156,9 +168,10 @@ export default {
         }
     },
     components: {
-        AddCustomersModal,
-        EditCustomersModal
-    }
+    AddCustomersModal,
+    EditCustomersModal,
+    ViewCustomerModal
+}
 }
 </script>
 

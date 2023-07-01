@@ -27,6 +27,14 @@
                                         <input type="number" class="form-control" placeholder="Enter Phone Number">
                                     </div>
                                 </div>
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4">
+                                        <label>Secondary Phone Number</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="number" class="form-control" placeholder="Enter Secondary Phone Number">
+                                    </div>
+                                </div>
                                 <div class="row align-items-center mb-5">
                                     <div class="col-4">
                                         <label>Email ID</label>
