@@ -27,6 +27,14 @@
                                         <input type="number" class="form-control" placeholder="Enter Phone Number">
                                     </div>
                                 </div>
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4">
+                                        <label>Date of Birth</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
                                 <div class="row align-items-center mb-5">
                                     <div class="col-4">
                                         <label>Email ID</label>
@@ -116,6 +124,17 @@
                                     </div>
                                     <div class="col-8">
                                         <input type="number" class="form-control" placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4">
+                                        <label class="form-label">Status</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option>Active</option>
+                                            <option>In Active</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>

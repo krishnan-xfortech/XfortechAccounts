@@ -1,87 +1,124 @@
-<!-- <template>
-    <div class="modal fade" id="viewmeasurement" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-hidden="true" @keydown.esc="hideModal()">
+<template>
+    <div class="modal fade" id="viewemployee" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="modal-title m-0">Measurement Details</div>
+                    <div class="modal-title m-0">Employee Details</div>
                     <button type="button" class="btn-close" @click="hideModal()" aria-label="Close"></button>
                 </div>
                 <form>
                     <div class="modal-body normal-modal">
-                        <div class="row" v-if="measurement != null">
+                        <div class="row">
                             <div class="col-lg-12">
-                                <div class="row mb-4">
-                                    <div class="col-9">
-                                        <div class="row align-items-center mb-4">
-                                            <div class="col-4">
-                                                Customer
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="text-white">
-                                                    <span>{{ measurement.customer ? measurement.customer.name : '' }}</span>
-                                                    <span>-</span>
-                                                    <span>+91 {{ measurement.customer ? measurement.customer.phone :
-                                                        '' }}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center mb-4">
-                                            <div class="col-4">
-                                                Service
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="text-white">
-                                                    {{ measurement.service ? measurement.service.name : '' }}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center">
-                                            <div class="col-4">
-                                                Measurement
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="text-white">
-                                                    {{ measurement.name }}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="row align-items-center mb-4">
                                     <div class="col-3">
-                                        <div class="border border-secondary p-3 text-center rounded">
-                                            <img src="app-assets/img/btn-icons/info.svg" class="mb-3 measurement-info-icon">
-                                            <h6 class="m-0 text-sm text-secondary">
-                                                Measurement values are in
-                                                <span class="text-uppercase fw-bold">inches</span>
-                                            </h6>
+                                        Date Of Join
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="text-white">
+                                            16/08/2022
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row align-items-center mb-4">
                                     <div class="col-3">
-
+                                        Employee Name
                                     </div>
                                     <div class="col-9">
-                                        <div class="row">
-                                            <div class="col-4" v-for="item in attributes" :key="item.id">
-                                                <div class="input-group">
-                                                    <span class="input-group-text col-7">{{ item.name }}</span>
-                                                    <input class="form-control col-5" type="number" placeholder="Value"
-                                                        disabled :value="item.value" />
-                                                </div>
-                                            </div>
-
+                                        <span class="text-white">	Nithish Robin </span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
+                                        Employee ID
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="text-white">
+                                            XF-10001
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="row align-items-start mb-4">
+                                <div class="row align-items-center mb-4">
                                     <div class="col-3">
-                                        Notes/Remarks
+                                        Date Of Birth
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="text-white">
+                                            26-08-2000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
+                                        Phone Number
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="text-white">
+                                           
+                                            <span class="ms-6">	+919876543210</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
+                                        Email
                                     </div>
                                     <div class="col-9">
                                         <span class="text-white">
-                                            {{ measurement.notes }}
+                                            employee123@xfortech.com
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
+                                        Status
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="badge badge-success">Active</span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
+                                        <label>Department</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="text-uppercase text-white">Department</span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3">
+                                        Designation
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="text-uppercase text-white">Senior Developer</span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-4">
+                                    <div class="col-3 ">
+                                       Salary
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="badge badge-pink"> <span>₹</span> 3000</span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start mb-4">
+                                    <div class="col-3">
+                                        Address
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="text-white">
+                                            lorem ipsum dolar sit
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start mb-4">
+                                    <div class="col-3">
+                                        Location
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="text-white">
+                                            Kollam , Kerala
                                         </span>
                                     </div>
                                 </div>
@@ -90,16 +127,7 @@
                                         Created At
                                     </div>
                                     <div class="col-9">
-                                        <span class="text-white">{{ $moment(measurement.created_at).format('DD/MM/YYYYLT')}}</span>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="col-3">
-                                        Created By
-                                    </div>
-                                    <div class="col-9">
-                                        <span class="text-white">{{ measurement.created_by ? measurement.created_by.name :
-                                                '' }}</span>
+                                        <span class="text-white">16/08/2022, 11:30 PM</span>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +135,6 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-text" @click="hideModal()">Close</button>
-                        <button type="submit" class="btn btn-primary">Print Measurement</button>
                     </div>
                 </form>
             </div>
@@ -115,31 +142,25 @@
     </div>
 </template>
 
-
-
-
 <script>
 import { Modal } from 'bootstrap';
 
 export default {
     data() {
         return {
-            modal: null,
-        };
-    },
-    mounted() {
-        //Define modal
-        this.modal = new Modal(document.getElementById("viewmeasurement"));
-    },
-    methods: {
-        //show modal
-        showModal() {
-            this.modal.show();
-        },
-        //hide modal
-        hideModal() {
-            this.modal.hide();
+            modal: null
         }
     },
+    mounted() {
+        this.modal = new Modal(document.getElementById('viewemployee'));
+    },
+    methods: {
+        showModal() {
+            this.modal.show()
+        },
+        hideModal() {
+            this.modal.hide()
+        }
+    }
 }
-</script> -->
+</script>
