@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="row" style="margin-top: 9%">
+        <div class="row" style="margin-top: 8%">
           <div class="col-2">
             <router-link to="/add-sales" type="button" class="card home-card">
               <div class="card-body">
