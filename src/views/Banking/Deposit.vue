@@ -83,6 +83,28 @@
                         </div>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            16/08/2022
+                        </td>
+                        <td>
+                            10001
+                        </td>
+                        <td>
+                            <span>1200.00</span>
+                            <span>AED</span>
+                        </td>
+                        <td class="">
+                            <div class="d-flex align-items-center ">
+                            <div class="text-uppercase">Cheque</div>
+                            <div class="text-uppercase text-white ms-auto"><span class="badge badge-success">
+                                Approved
+                            </span>
+                        </div>
+                        </div>
+                        </td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
