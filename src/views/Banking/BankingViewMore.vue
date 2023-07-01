@@ -13,6 +13,25 @@
                                     <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
                                 </router-link>
                             </div> -->
+                            <div class="col-4" v-if="$route.name == 'banking-view-deposit'">
+                                <div class="row align-items-center justify-content-end">
+                                    <div class="col-auto">
+                                        <a type="button" class="btn btn-secondary btn-sqr ms-75"
+                                            @click="$refs.deposit_edit_ref.showModal()">
+                                            <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
+                                        </a>
+                                        <button class="btn btn-secondary btn-sqr ms-75">
+                                            <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
+                                        </button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a class="btn btn-primary" @click="$refs.deposit_add_ref.showModal()">
+                                            <img class="btn-plus-icon me-2" src="app-assets/img/btn-icons/plus.svg" />
+                                            <span>Add New Deposit</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-4" v-if="$route.name == 'banking-view-withdraw'">
                                 <div class="row align-items-center justify-content-end">
                                     <div class="col-auto">
@@ -124,4 +143,23 @@
             </section>
         </div>
     </div>
+    <Teleport to="#modals">
+        <WithdrawAddModal ref="withdraw_add_ref" />
+        <WithdrawEditModal ref="withdraw_edit_ref" />
+        <DepositAddModal ref="deposit_add_ref" />
+        <DepositEditModal ref="deposit_edit_ref" />
+    </Teleport>
 </template>
+
+<script>
+import WithdrawAddModal from '../../components/modals/Banking/Withdraw/WithdrawAddModal.vue';
+import WithdrawEditModal from '../../components/modals/Banking/Withdraw/WithdrawEditModal.vue';
+import DepositAddModal from '../../components/modals/Banking/Deposit/DepositAddModal.vue';
+import DepositEditModal from '../../components/modals/Banking/Deposit/DepositEditModal.vue';
+
+export default {
+    components: {
+        WithdrawAddModal, WithdrawEditModal, DepositAddModal, DepositEditModal
+    }
+}
+</script>

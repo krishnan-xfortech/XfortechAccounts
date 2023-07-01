@@ -55,10 +55,7 @@
             </table>
         </div>
     </div>
-    <Teleport to="#modals">
-        <WithdrawAddModal ref="withdraw_add_ref" />
-        <WithdrawEditModal ref="withdraw_edit_ref" />
-    </Teleport>
+
 </template>
 
 <script>
