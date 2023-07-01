@@ -1,6 +1,6 @@
 <template>
   <div class="modal fade" id="editdeposit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-hidden="true">
+      aria-hidden="true" ref="modal">
       <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
               <div class="modal-header">
@@ -16,11 +16,11 @@
                                       <label>Bank Name</label>
                                   </div>
                                   <div class="col-8">
-                                      <Select class="form-select">
+                                      <select class="form-select">
                                         <option>ESAF Bank</option>
                                         <option>Bank 1</option>
                                         <option>Bank 2</option>
-                                      </Select>
+                                      </select>
                                   </div>
                               </div>
                               <div class="row align-items-center mb-3">
@@ -132,7 +132,7 @@ export default {
       }
   },
   mounted() {
-      this.modal = new Modal(document.getElementById('editdeposit'));
+      this.modal = new Modal(this.$refs.modal);
   },
   methods: {
       showModal() {

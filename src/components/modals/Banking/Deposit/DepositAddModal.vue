@@ -1,11 +1,11 @@
 <template>
-  <div class="modal fade" id="adddeposit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-hidden="true">
+  <div class="modal fade" id="adddeposit2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-hidden="true" ref="modal">
       <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
               <div class="modal-header">
                   <div class="modal-title m-0">Add Deposit</div>
-                  <button type="button" class="btn-close" @click="hideModal()" aria-label="Close"></button>
+                  <button type="button" class="btn-close" @click.prevent="hideModal()" aria-label="Close"></button>
               </div>
               <form>
                   <div class="modal-body normal-modal">
@@ -16,11 +16,11 @@
                                       <label>Bank Name</label>
                                   </div>
                                   <div class="col-8">
-                                      <Select class="form-select">
+                                      <select class="form-select">
                                         <option>ESAF Bank</option>
                                         <option>Bank 1</option>
                                         <option>Bank 2</option>
-                                      </Select>
+                                      </select>
                                   </div>
                               </div>
                               <div class="row align-items-center mb-3">
@@ -132,7 +132,7 @@ export default {
       }
   },
   mounted() {
-      this.modal = new Modal(document.getElementById('adddeposit'));
+      this.modal = new Modal(this.$refs.modal);
   },
   methods: {
       showModal() {
@@ -141,6 +141,7 @@ export default {
       hideModal() {
           this.modal.hide()
       }
+      
   }
 }
 </script>

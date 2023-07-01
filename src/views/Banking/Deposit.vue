@@ -66,10 +66,20 @@
                         <td>
                             <div class="d-flex align-items-center ">
                             <div class="text-uppercase">Cheque</div>
-                            <div class="text-uppercase ms-auto"><span class="badge badge-success">
-                                Approved
+                            <div class="text-uppercase text-white ms-auto"><span class="badge badge-secondary">
+                                issued
                             </span>
                         </div>
+                        </div>
+                        </td>
+                        <td style="border-top: 1px solid rgba(153, 166, 184, .15);">
+                            <div class="d-flex align-items-center ">
+                            <a type="button" class="badge badge-success">
+                                <img class="status-icon1" src="app-assets/img/btn-icons/check.svg">
+                            </a>
+                            <a type="button" class="badge badge-danger ms-75">
+                                <img class="status-icon2 " src="app-assets/img/btn-icons/close.svg">
+                            </a>
                         </div>
                         </td>
                     </tr>
