@@ -48,13 +48,20 @@
                 <div class="row align-items-center mb-3">
                   <div class="col-3">Payment Mode</div>
                   <div class="col-6">
-                    <select class="form-select">
-                      <option>Select a Payment</option>
-                      <option>Cash</option>
-                      <option>Card</option>
-                      <option>Cheque</option>
-                      <option>Bank Transfer</option>
+                    <select class="form-select" v-model="payment_method">
+                      <option value="">Select a Payment</option>
+                      <option value="1">Cash</option>
+                      <option value="2">Card</option>
+                      <option value="3">Cheque</option>
+                      <option value="4">Bank Transfer</option>
+                      <option value="5">UPI</option>
                     </select>
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3" v-if="payment_method==3">
+                  <div class="col-3">Cheque Due Date</div>
+                  <div class="col-6">
+                    <input type="date" class="form-control"/>
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
@@ -114,6 +121,7 @@ export default {
     return {
       modal: null,
       tax: 0,
+      payment_method:1
     };
   },
   mounted() {
