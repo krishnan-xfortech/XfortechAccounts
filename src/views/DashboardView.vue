@@ -87,6 +87,15 @@
             </router-link>
           </div>
           <div class="col-2">
+            <router-link to="/expense-category" type="button" class="card home-card">
+              <div class="card-body">
+                <img class="mb-5" src="/app-assets/img/more-icons/expense-head.svg" style="width: 30px" />
+                <h6 class="text-uppercase">Expense Category</h6>
+                <p class="m-0">Manage expense catgeory</p>
+              </div>
+            </router-link>
+          </div>
+          <div class="col-2">
             <router-link to="/expenses" type="button" class="card home-card">
               <div class="card-body">
                 <img class="mb-5" src="app-assets/img/home-icons/expense.png" style="width: 30px" />
@@ -96,18 +105,9 @@
             </router-link>
           </div>
           <div class="col-2">
-            <router-link to="/expense-category" type="button" class="card home-card">
-              <div class="card-body">
-                <img class="mb-5" src="/app-assets/img/home-icons/materials.png" style="width: 30px" />
-                <h6 class="text-uppercase">Expense Category</h6>
-                <p class="m-0">Manage expense catgeory</p>
-              </div>
-            </router-link>
-          </div>
-          <div class="col-2">
             <router-link to="/financial-year" type="button" class="card home-card">
               <div class="card-body">
-                <img class="mb-5" src="/app-assets/img/home-icons/date.png" style="width: 30px" />
+                <img class="mb-5" src="/app-assets/img/more-icons/calendar.svg" style="width: 30px" />
                 <h6 class="text-uppercase">Financial Year</h6>
                 <p class="m-0">Manage financial year</p>
               </div>
