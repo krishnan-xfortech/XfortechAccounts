@@ -24,9 +24,6 @@
                 <div class="col-4">
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
-                      <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.payment_ref.showModal()">
-                        <img class="btn-icon" src="app-assets/img/btn-icons/money.svg" />
-                      </button>
                       <router-link to="/edit-sales" type="button" class="btn btn-secondary btn-sqr ms-75">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </router-link>
@@ -62,6 +59,7 @@
                         <th scope="col">Balance Due</th>
                         <th scope="col">Due Date</th>
                         <th scope="col">Created At</th>
+                        <th scope="col">Payment</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -73,6 +71,21 @@
                         <td><span>$</span><span class="">1500.00</span></td>
                         <td>16/08/2022</td>
                         <td><small>16/08/2022, 11:30 PM</small></td>
+                        <td><button class="btn btn-success btn-sqr ms-75" @click="$refs.payment_ref.showModal()">
+                          <span class="text-uppercase">Add payment</span>
+                        </button></td>
+                      </tr>
+                      <tr class="">
+                        <td>16/08/2022</td>
+                        <td>10001</td>
+                        <td>Nithish Robin</td>
+                        <td><span>$</span><span class="">15200.00</span></td>
+                        <td><span>$</span><span class="">1500.00</span></td>
+                        <td>16/08/2022</td>
+                        <td><small>16/08/2022, 11:30 PM</small></td>
+                        <td><button class="btn btn-secondary btn-sqr ms-75" disabled>
+                          <span class="text-uppercase text-white">Fully paid</span>
+                        </button></td>
                       </tr>
                     </tbody>
                   </table>
