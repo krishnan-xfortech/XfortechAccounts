@@ -41,6 +41,11 @@ const router = createRouter({
             component: () => import('../views/Sales/EditSalesView.vue')
         },
         {
+            path: '/sales-preview',
+            name: 'sales-salespreview',
+            component: () => import('../views/Sales/SalesPreviewView.vue')
+        },
+        {
             path: '/financial-year',
             name: 'financial-year',
             component: () => import('../views/FinancialYearView.vue')

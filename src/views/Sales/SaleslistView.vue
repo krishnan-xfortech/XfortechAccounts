@@ -24,6 +24,9 @@
                 <div class="col-4">
                   <div class="row align-items-center justify-content-end">
                     <div class="col-auto">
+                      <router-link to="/sales-preview" type="button" class="btn btn-secondary btn-sqr ms-75">
+                        <img class="btn-icon" src="app-assets/img/btn-icons/eye.svg" />
+                      </router-link>
                       <router-link to="/edit-sales" type="button" class="btn btn-secondary btn-sqr ms-75">
                         <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                       </router-link>

@@ -1,22 +1,11 @@
 <template>
-  <div
-    class="modal fade"
-    id="payment"
-    data-bs-backdrop="static"
-    data-bs-keyboard="false"
-    tabindex="-1"
-    aria-hidden="true"
-  >
+  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm">
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal-title m-0">Invoice Payment</div>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form>
           <div class="modal-body" style="min-height: 210px">
@@ -29,12 +18,7 @@
                     </div>
                   </div>
                   <div class="col-8">
-                    <input
-                      type="number"
-                      disabled
-                      class="form-control border-none"
-                      value="15000.00"
-                    />
+                    <input type="number" disabled class="form-control border-none" value="15000.00" />
                   </div>
                 </div>
               </div>
@@ -56,7 +40,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12" v-if="payment_method==3">
+              <div class="col-12" v-if="payment_method == 3">
                 <div class="row align-items-center justify-content-end">
                   <div class="col-4">
                     <div class="text-secondary">
@@ -64,7 +48,7 @@
                     </div>
                   </div>
                   <div class="col-8">
-                    <input type="date" class="form-control"/>
+                    <input type="date" class="form-control" />
                   </div>
                 </div>
               </div>
@@ -88,12 +72,7 @@
                     </div>
                   </div>
                   <div class="col-8">
-                    <input
-                      type="number"
-                      required
-                      class="form-control"
-                      placeholder="Enter Amount"
-                    />
+                    <input type="number" required class="form-control" placeholder="Enter Amount" />
                   </div>
                 </div>
               </div>
@@ -105,13 +84,7 @@
                     </div>
                   </div>
                   <div class="col-8">
-                    <input
-                      type="number"
-                      disabled
-                      class="form-control border-none"
-                      value="1000.00"
-                      placeholder="0.00"
-                    />
+                    <input type="number" disabled class="form-control border-none" value="1000.00" placeholder="0.00" />
                   </div>
                 </div>
               </div>
