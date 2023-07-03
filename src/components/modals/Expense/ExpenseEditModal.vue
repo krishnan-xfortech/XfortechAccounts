@@ -28,18 +28,6 @@
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
-                  <div class="col-3">
-                    <label>Bank Name</label>
-                  </div>
-                  <div class="col-6">
-                    <Select class="form-select">
-                      <option>ESAF Bank</option>
-                      <option>Bank 1</option>
-                      <option>Bank 2</option>
-                    </Select>
-                  </div>
-                </div>
-                <div class="row align-items-center mb-3">
                   <div class="col-3">Amount</div>
                   <div class="col-6">
                     <input type="number" class="form-control" placeholder="Enter Amount" />
