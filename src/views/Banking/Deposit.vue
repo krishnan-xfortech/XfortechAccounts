@@ -13,12 +13,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
-                            16/08/2022
-                        </td>
-                        <td>
-                            10001
-                        </td>
+                        <td>16/08/2022</td>
+                        <td>10001</td>
                         <td>
                             <span>1200.00</span>
                             <span>AED</span>
@@ -26,14 +22,15 @@
                         <td>
                             <div class="text-uppercase">BAnk Transfer</div>
                         </td>
+                        <td>
+                            <div class="text-uppercase text-white ms-auto">
+                                <span class="badge badge-warning">Pending</span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>
-                            16/08/2022
-                        </td>
-                        <td>
-                            10001
-                        </td>
+                        <td>16/08/2022</td>
+                        <td>10001</td>
                         <td>
                             <span>1200.00</span>
                             <span>AED</span>
@@ -44,7 +41,7 @@
                             </div>
                         </td>
                         <td style="border-top: 1px solid rgba(153, 166, 184, .15);">
-                            <div class="text-uppercase text-white ms-auto d-flex" style="justify-content: center;">
+                            <div class="text-uppercase text-white ms-auto">
                                 <span class="badge badge-secondary" style="margin-right: 60px;">issued</span>
                                 <a type="button" class="badge badge-success">
                                     <img class="status-icon1" src="app-assets/img/btn-icons/check.svg">
