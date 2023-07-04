@@ -53,12 +53,6 @@
                                     </div>
                                     <div class="col-8">
                                         <div class="d-flex align-items-center">
-                                            <!-- <label class="custom-radio">
-                                                <input type="radio" name="cash-receipt" checked />
-                                                <div class="option-1">
-                                                    <span>Sales Bal.</span>
-                                                </div>
-                                            </label> -->
                                             <label class="custom-radio">
                                                 <input type="radio" name="cash-receipt" checked />
                                                 <div class="option-2">
@@ -84,7 +78,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-5" v-if="payment_method==3">
+                                <div class="row align-items-center mb-5" v-if="payment_method == 3">
                                     <div class="col-4">
                                         <label>Cheque Due Date</label>
                                     </div>
@@ -150,7 +144,12 @@
                                         <label>Status</label>
                                     </div>
                                     <div class="col-8">
-                                        <span class="badge badge-danger">Not Paid</span>
+                                        <select class="form-select" v-model="payment_status">
+                                            <option value="" disabled>Select Payment Status</option>
+                                            <option value="1">Not Paid</option>
+                                            <option value="2">Partially Paid</option>
+                                            <option value="3">Fully Paid</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +172,8 @@ export default {
     data() {
         return {
             modal: null,
-            payment_method:1
+            payment_method: 1,
+            payment_status: ''
         }
     },
     mounted() {

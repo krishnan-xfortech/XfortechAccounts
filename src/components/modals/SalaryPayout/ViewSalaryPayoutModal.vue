@@ -84,7 +84,7 @@
                                     </div>
                                     <div class="col-9">
                                         <span class="badge badge-secondary">
-                                            Partually paid
+                                            Partially paid
                                         </span>
                                     </div>
                                 </div>
