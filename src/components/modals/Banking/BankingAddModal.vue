@@ -18,9 +18,15 @@
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
-                  <div class="col-3">Branch</div>
+                  <div class="col-3">IFSC Code</div>
                   <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Enter Branch name" />
+                    <input type="text" class="form-control" placeholder="Enter IFSC code" />
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Account Number</div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Enter acocunt number" />
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
@@ -32,11 +38,7 @@
                 <div class="row align-items-center mb-3">
                   <div class="col-3">Description</div>
                   <div class="col-6">
-                    <textarea
-                  rows="4"
-                  class="form-control"
-                  placeholder="Enter Description"
-                ></textarea>
+                    <textarea rows="4" class="form-control" placeholder="Enter Description"></textarea>
                   </div>
                 </div>
               </div>

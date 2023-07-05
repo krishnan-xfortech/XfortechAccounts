@@ -8,11 +8,6 @@
                             <div class="col">
                                 <h4 class="m-0 text-uppercase">Banking Details</h4>
                             </div>
-                            <!-- <div class="col-auto">
-                                <router-link :to="{ name: 'dashboard' }" type="button" class="">
-                                    <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
-                                </router-link>
-                            </div> -->
                             <div class="col-4" v-if="$route.name == 'banking-view-deposit'">
                                 <div class="row align-items-center justify-content-end">
                                     <div class="col-auto">
@@ -20,7 +15,8 @@
                                             @click="$refs.deposit_edit_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                                         </a>
-                                        <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
+                                        <button class="btn btn-secondary btn-sqr ms-75"
+                                            @click="$refs.delete_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                                         </button>
                                     </div>
@@ -32,9 +28,9 @@
                                     </div>
                                     <div class="col-auto">
                                         <router-link :to="{ name: 'banking-view' }" type="button" class="">
-                                          <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
+                                            <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
                                         </router-link>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-4" v-if="$route.name == 'banking-view-withdraw'">
@@ -44,7 +40,8 @@
                                             @click="$refs.withdraw_edit_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/edit.svg" />
                                         </a>
-                                        <button class="btn btn-secondary btn-sqr ms-75" @click="$refs.delete_ref.showModal()">
+                                        <button class="btn btn-secondary btn-sqr ms-75"
+                                            @click="$refs.delete_ref.showModal()">
                                             <img class="btn-icon" src="app-assets/img/btn-icons/delete.svg" />
                                         </button>
                                     </div>
@@ -56,9 +53,9 @@
                                     </div>
                                     <div class="col-auto">
                                         <router-link :to="{ name: 'banking-view' }" type="button" class="">
-                                          <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
+                                            <img src="app-assets/img/btn-icons/close.svg" class="back-btn" />
                                         </router-link>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -73,11 +70,15 @@
                                                 <i data-feather="user" class="font-large-2"></i>
                                             </span>
                                         </div>
-                                        <div class="ms-1 mt-50">
+                                        <div class="ms-1">
                                             <h5 class="fw-bold">ESAF Bank</h5>
+                                            <p class="m-0 d-flex gap-5">
+                                                <span>Account No: </span>
+                                                <span class="text-uppercase">123456123456123456</span>
+                                            </p>
                                             <p class="m-0">
                                                 <span>IFSC: </span>
-                                                <span class="text-uppercase">123456ffgui</span>
+                                                <span class="text-uppercase" style="margin-left: 100px;">123456ffgui</span>
                                             </p>
                                         </div>
                                     </div>
@@ -177,11 +178,11 @@ import DepositEditModal from '../../components/modals/Banking/Deposit/DepositEdi
 import DeleteConfirmModal from '../../components/modals/Delete/DeleteConfirmModal.vue';
 export default {
     components: {
-    WithdrawAddModal,
-    WithdrawEditModal,
-    DepositAddModal,
-    DepositEditModal,
-    DeleteConfirmModal
-}
+        WithdrawAddModal,
+        WithdrawEditModal,
+        DepositAddModal,
+        DepositEditModal,
+        DeleteConfirmModal
+    }
 }
 </script>

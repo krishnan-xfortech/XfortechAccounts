@@ -93,14 +93,14 @@
                                         <input type="text" class="form-control" placeholder="Enter ID" value="C-10001">
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-5">
+                                <!-- <div class="row align-items-center mb-5">
                                     <div class="col-4">
                                         <label>Loyalty #</label>
                                     </div>
                                     <div class="col-8">
                                         <input type="text" class="form-control" value="1001">
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row align-items-center mb-3">
                                     <div class="col-4">
                                         <label>Opening Bal.</label>

@@ -14,29 +14,31 @@
                 <div class="row align-items-center mb-3">
                   <div class="col-3">Bank name</div>
                   <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Enter Bank Name" value="ESAF Bank"/>
+                    <input type="text" class="form-control" placeholder="Enter Bank Name" value="ESAF Bank" />
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
-                  <div class="col-3">Branch</div>
+                  <div class="col-3">IFSC Code</div>
                   <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Enter Branch Name" value="Kollam"/>
+                    <input type="text" class="form-control" placeholder="Enter IFSC code" />
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-3">Account Number</div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Enter acocunt number" />
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
                   <div class="col-3">Opening Balance</div>
                   <div class="col-6">
-                    <input type="number" class="form-control" placeholder="Enter Amount" value="200000"/>
+                    <input type="number" class="form-control" placeholder="Enter Amount" value="200000" />
                   </div>
                 </div>
                 <div class="row align-items-center mb-3">
                   <div class="col-3">Description</div>
                   <div class="col-6">
-                    <textarea
-                  rows="4"
-                  class="form-control"
-                  placeholder="Enter Description"
-                ></textarea>
+                    <textarea rows="4" class="form-control" placeholder="Enter Description"></textarea>
                   </div>
                 </div>
               </div>

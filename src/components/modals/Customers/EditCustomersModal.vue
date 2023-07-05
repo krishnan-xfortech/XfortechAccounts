@@ -94,14 +94,14 @@
                                             value="C-10001">
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-5">
+                                <!-- <div class="row align-items-center mb-5">
                                     <div class="col-4">
                                         <label>Loyalty #</label>
                                     </div>
                                     <div class="col-8">
                                         <input type="text" disabled class="form-control" value="1001">
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

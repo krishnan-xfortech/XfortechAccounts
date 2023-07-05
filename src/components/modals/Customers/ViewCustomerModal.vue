@@ -29,7 +29,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <!-- <div class="row align-items-center mb-4">
                                     <div class="col-3">
                                         Loyalty #
                                     </div>
@@ -38,7 +38,7 @@
                                             1001
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row align-items-center mb-4">
                                     <div class="col-3">
                                         Phone Number
