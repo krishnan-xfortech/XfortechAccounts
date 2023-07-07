@@ -1,13 +1,18 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import DashboardView from '../views/DashboardView.vue'
+import LoginView from '../views/Auth/LoginView.vue'
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes: [
         {
             path: '/',
+            name: 'login',
+            component: LoginView
+        },
+        {
+            path: '/dashboard',
             name: 'dashboard',
-            component: DashboardView
+            component: () => import('../views/DashboardView.vue')
         },
         {
             path: '/expense-category',

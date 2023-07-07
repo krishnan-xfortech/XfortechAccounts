@@ -31,8 +31,9 @@
               </div>
               <div class="col-4">
                 <div class="d-flex justify-content-end">
-                  <a href="" type="button" class="">
-                    <img src="app-assets/img/building.jpg" class="company-img" />
+                  <a href="" type="button" class="" @click="logout()">
+                    <!-- <img src="app-assets/img/building.jpg" class="company-img" /> -->
+                    <span class="text-danger">Logout</span>
                   </a>
                 </div>
               </div>
@@ -122,47 +123,23 @@
               </div>
             </router-link>
           </div>
-          <!-- <div class="col-2">
-            <a href="purchase.php" type="button" class="card home-card">
-              <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/purchase.png"
-                  width="30px"
-                />
-                <h6 class="text-uppercase">Purchase</h6>
-                <p class="m-0">Bills & suppliers</p>
-              </div>
-            </a>
-          </div> -->
-          <!-- <div class="col-2">
-            <a href="branches.php" type="button" class="card home-card">
-              <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/branch.png"
-                  width="30px"
-                />
-                <h6 class="text-uppercase">Branches</h6>
-                <p class="m-0">Manage branches</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-2">
-            <a href="settings.php" type="button" class="card home-card">
-              <div class="card-body">
-                <img
-                  class="mb-5"
-                  src="app-assets/img/home-icons/settings.png"
-                  width="30px"
-                />
-                <h6 class="text-uppercase">Settings</h6>
-                <p class="m-0">Configure system</p>
-              </div>
-            </a>
-          </div> -->
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    logout() {
+      this.$router.push('/');
+    }
+  }
+}
+</script>
