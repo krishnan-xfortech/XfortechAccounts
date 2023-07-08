@@ -137,13 +137,8 @@ export default {
   },
   methods: {
     logout() {
-      this.axios.get('logout').then((response) => {
-        if (response.data.success == true) {
-          this.authStore.token = null;
-          this.authStore.loggedOut = true;
-          this.$router.push('/')
-        }
-      })
+      this.authStore.loggedOut = true;
+      this.$router.push('/login-pin')
     }
   }
 }
