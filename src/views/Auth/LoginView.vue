@@ -27,15 +27,18 @@
                                 <span>Version:</span>
                                 <span>1.0.0</span>
                             </p>
+                            <span class="text-danger text-xs" v-if="error">{{ errorString }}</span>
                         </div>
                         <form class="row">
                             <div class="col-12">
                                 <label class="form-label">Email</label>
-                                <input type="email" class="form-control" placeholder="Enter Your Mail ID">
+                                <input v-model="email" type="email" class="form-control" placeholder="Enter Your Mail ID"
+                                    :class="{ 'border-danger': v$.email.$error }">
                             </div>
                             <div class="col-12">
                                 <label class="form-label">Password</label>
-                                <input type="password" class="form-control" placeholder="Enter Your Password">
+                                <input v-model="password" type="password" class="form-control"
+                                    placeholder="Enter Your Password" :class="{ 'border-danger': v$.password.$error }">
                             </div>
                             <div class="col-12 mb-4">
                                 <a class="text-pink" href="#">Forgot Password ?</a>
@@ -45,6 +48,7 @@
                                     Login
                                 </button>
                             </div>
+                            <AuthLoader v-if="loading" />
                             <div class="col-12 text-center text-white">
                                 <span>Powered By <a class="text-pink fw-bold text-uppercase" href="https://xfortech.com/"
                                         target="_blank">xfortech</a></span>
@@ -58,15 +62,75 @@
 </template>
 
 <script>
+import { useAuthStore } from '../../stores/authStore';
+import { useVuelidate } from '@vuelidate/core';
+import { required, email } from '@vuelidate/validators';
+import AuthLoader from '../../components/Loaders/AuthLoader.vue';
+
 export default {
+    setup() {
+        return { v$: useVuelidate() }
+    },
+    components: {
+        AuthLoader
+    },
     data() {
         return {
-
+            email: '',
+            password: '',
+            error: false,
+            authStore: useAuthStore(),
+            loading: false,
+        }
+    },
+    mounted() {
+        if (this.authStore.isLoggedIn == true && this.authStore.usePinLogin == true) {
+            this.$router.push('/login-pin')
         }
     },
     methods: {
-        login() {
-            this.$router.push('/dashboard');
+        async login() {
+            const isFormCorrect = await this.v$.$validate()
+            if (!isFormCorrect) return
+            this.loading = true;
+            this.axios.post('login', { email: this.email, password: this.password }).then((response) => {
+                this.loading = false;
+                if (response.data.success == true) {
+                    this.authStore.user = response.data.data;
+                    this.authStore.email = this.email;
+                    this.authStore.password = this.password;
+                    this.authStore.token = response.data.data.token;
+                    this.authStore.pin = response.data.data.login_pin;
+                    this.authStore.usePinLogin = true;
+                    this.$router.push('/dashboard')
+                    return;
+                }
+                else {
+                    this.error = true;
+                }
+            })
+        }
+    },
+    validations() {
+        return {
+            email: { required, email },
+            password: { required }
+        }
+    },
+    computed:
+    {
+        errorString() {
+            if (this.error == true) {
+                return 'Your email or password is incorrect'
+            }
+        }
+    },
+    watch: {
+        email() {
+            this.error = false;
+        },
+        password() {
+            this.error = false;
         }
     }
 }

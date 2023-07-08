@@ -1,5 +1,6 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import LoginView from '../views/Auth/LoginView.vue'
+import { createRouter, createWebHashHistory } from 'vue-router';
+import LoginView from '../views/Auth/LoginView.vue';
+import LoginPinView from '../views/Auth/LoginPinView.vue';
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -8,6 +9,11 @@ const router = createRouter({
             path: '/',
             name: 'login',
             component: LoginView
+        },
+        {
+            path: '/login-pin',
+            name: 'login-pin',
+            component: LoginPinView
         },
         {
             path: '/dashboard',
@@ -73,7 +79,7 @@ const router = createRouter({
         {
             path: '/banking-view-more',
             name: 'banking-view-more',
-            redirect : {name : 'banking-view-deposit'},
+            redirect: { name: 'banking-view-deposit' },
             component: () => import('../views/Banking/BankingViewMore.vue'),
             children: [
                 {

@@ -31,9 +31,8 @@
               </div>
               <div class="col-4">
                 <div class="d-flex justify-content-end">
-                  <a href="" type="button" class="" @click="logout()">
-                    <!-- <img src="app-assets/img/building.jpg" class="company-img" /> -->
-                    <span class="text-danger">Logout</span>
+                  <a href="" type="button" @click="logout()" class="p-2">
+                    <img src="/app-assets/svg/logout.svg" style="width: 30px; height: 30px;" />
                   </a>
                 </div>
               </div>
@@ -138,7 +137,13 @@ export default {
   },
   methods: {
     logout() {
-      this.$router.push('/');
+      this.axios.get('logout').then((response) => {
+        if (response.data.success == true) {
+          this.authStore.token = null;
+          this.authStore.loggedOut = true;
+          this.$router.push('/')
+        }
+      })
     }
   }
 }
